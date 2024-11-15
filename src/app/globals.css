@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 1px;
+
+    /*@media (max-width: 1920px) {*/
+    /*  font-size: calc(100vw / 1920);*/
+    /*}*/
+  }
+
+  body {
+    @apply bg-white text-[16rem] text-black dark:bg-black dark:text-white;
+  }
+}
