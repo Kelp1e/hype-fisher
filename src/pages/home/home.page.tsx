@@ -1,12 +1,12 @@
 import { ChangeLanguageListbox } from "~/feautures/change-language/ui"
 
 import { LINK } from "~/shared/lib"
-import { Button, Icon, Text } from "~/shared/ui"
+import { Button, Icon, Text, Video } from "~/shared/ui"
 
 export const Home = () => {
   return (
     <div>
-      <div className="flex h-[100dvh] flex-1 bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat py-[20rem]">
+      <div className="flex h-fit min-h-[100dvh] flex-1 bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat py-[20rem]">
         <div className="max-container mx-auto flex flex-col">
           <header className="flex w-full items-center justify-between gap-[12rem]">
             <ChangeLanguageListbox />
@@ -26,7 +26,7 @@ export const Home = () => {
                 alt="hype hisher logo"
                 className="mt-[64rem] w-full max-w-[333rem]"
               />
-              <Button as="a" href={LINK.TELEGRAM}>
+              <Button as="a" href={LINK.TELEGRAM} className="mt-[20rem]">
                 <div className="flex items-center gap-[4rem]">
                   <Icon.PinkFish className="min-w-[22rem] max-w-[22rem] rotate-[-55deg]" />
                   <Text shadow className="whitespace-nowrap text-center">
@@ -37,6 +37,14 @@ export const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex h-[80rem] items-center justify-center bg-orange">
+        <div className="text-center font-kemco">News</div>
+      </div>
+      <div className="relative flex h-fit min-h-[100dvh] flex-col">
+        <Video className="h-full flex-1 object-cover">
+          <source src="/videos/underwater.mp4" />
+        </Video>
       </div>
     </div>
   )
