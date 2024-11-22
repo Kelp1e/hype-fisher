@@ -1,7 +1,7 @@
 import React from "react"
 
 import { cn } from "~/shared/lib"
-import { PolyRef, PolyRefComponent, PolyRefProps, Text } from "~/shared/ui"
+import { PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
 
 import { ButtonProps } from "./button.props.ts"
 
@@ -57,14 +57,7 @@ export const Button = React.forwardRef<never>(
                 classNames?.glare
               )}
             />
-            <Text
-              shadow
-              classNames={{
-                shadow: classNames?.shadow,
-              }}
-            >
-              {[children]}
-            </Text>
+            {children}
           </div>
         </div>
       </Component>

@@ -26,8 +26,15 @@ export const Home = () => {
                 alt="hype hisher logo"
                 className="mt-[64rem] w-full max-w-[333rem]"
               />
-              <Button as="a" href={LINK.TELEGRAM}>
-                Start fishing
+              <Button
+                as="a"
+                href={LINK.TELEGRAM}
+                classNames={{ content: "text-center" }}
+              >
+                <div className="flex items-center gap-[4rem]">
+                  <Icon.PinkFish className="h-[10rem] rotate-[-55deg]" />
+                  <span>Start fishing</span>
+                </div>
               </Button>
             </div>
           </div>

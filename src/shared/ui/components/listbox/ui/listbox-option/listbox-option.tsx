@@ -14,18 +14,17 @@ export const ListboxOption = (props: ListboxOptionProps) => {
     <Headless.ListboxOption
       as={React.forwardRef<HTMLButtonElement, ComponentProps<typeof Corners>>(
         (asProps, ref) => (
-          <Corners as="button" ref={ref} {...asProps} />
+          <Corners as="button" size="4rem" ref={ref} {...asProps} />
         )
       )}
-      className={cn("group/listbox-option mt-[-4rem] first:mt-0 bg-[#E97835]", className)}
-      classNames={{
-        content:
-          "bg-orange group-data-[active]/listbox-option:bg-[#E97835] px-[12rem] text-left",
-      }}
+      className={cn(
+        "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
+        className
+      )}
       {...rest}
     >
       {(option) => (
-        <div>
+        <div className="bg-orange px-[12rem] text-left group-data-[active]/listbox-option:bg-[#E97835]">
           {typeof children === "function" ? children(option) : children}
         </div>
       )}

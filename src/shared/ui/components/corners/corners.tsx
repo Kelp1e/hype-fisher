@@ -2,9 +2,9 @@ import React from "react"
 
 import { cn } from "~/shared/lib"
 import { PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
-import { getCornersPolygon } from "~/shared/ui/components/corners/corners.utils.ts"
 
 import { CornersProps } from "./corners.props.ts"
+import { getCornersPolygon } from "./corners.utils.ts"
 
 export const Corners = React.forwardRef<never>(
   <E extends React.ElementType = "div">(
@@ -13,10 +13,9 @@ export const Corners = React.forwardRef<never>(
   ) => {
     const {
       as: Component = "div",
-      size = 4,
+      size = "4rem",
       style,
       className,
-      classNames,
       children,
       ...rest
     } = props
@@ -26,15 +25,12 @@ export const Corners = React.forwardRef<never>(
         ref={ref}
         style={{
           ...style,
-          padding: `${size}rem`,
-          clipPath: `polygon(${getCornersPolygon(`${size}rem`)})`,
+          clipPath: `polygon(${getCornersPolygon(size)})`,
         }}
         className={cn("bg-white", className)}
         {...rest}
       >
-        <div className={cn("h-full bg-black", classNames?.content)}>
-          {typeof children === "function" ? children() : children}
-        </div>
+        {children}
       </Component>
     )
   }
