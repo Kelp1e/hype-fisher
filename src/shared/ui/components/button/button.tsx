@@ -29,14 +29,19 @@ export const Button = React.forwardRef<never>(
           className
         )}
       >
-        <div
-          className={cn(
-            "relative h-full",
-            "before:absolute before:inset-x-0 before:bottom-1/2 before:top-0 before:z-[-1] before:bg-[#2E9F45]",
-            "after:absolute after:inset-x-0 after:bottom-0 after:top-[50%] after:z-[-1] after:bg-[#569F37]",
-            styles.polygonInner
-          )}
-        >
+        <div className={cn("relative h-full", styles.polygonInner)}>
+          <div
+            className={cn(
+              "absolute inset-x-0 bottom-1/2 top-0 z-[-1] bg-[#2E9F45]",
+              classNames?.top
+            )}
+          />
+          <div
+            className={cn(
+              "absolute inset-x-0 bottom-0 top-1/2 z-[-1] bg-[#569F37]",
+              classNames?.bottom
+            )}
+          />
           <div
             className={cn(
               "bg-green relative flex h-full items-center justify-center px-[50rem]",
@@ -51,7 +56,14 @@ export const Button = React.forwardRef<never>(
                 classNames?.glare
               )}
             />
-            <Text shadow>{children}</Text>
+            <Text
+              shadow
+              classNames={{
+                shadow: classNames?.shadow,
+              }}
+            >
+              {children}
+            </Text>
           </div>
         </div>
       </Component>

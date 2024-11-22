@@ -8,7 +8,7 @@ export const Home = () => {
           <div className="flex h-full items-center justify-center">
             <div className="gap-[10rem]l flex flex-col items-center">
               <img src="/images/logo.png" alt="logo" className="w-[560rem]" />
-              <Button className="whitespace-nowrap">Start fishing</Button>
+              <Button>Start fishing</Button>
             </div>
           </div>
         </div>
