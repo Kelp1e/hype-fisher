@@ -63,7 +63,7 @@ export const Button = React.forwardRef<never>(
                 shadow: classNames?.shadow,
               }}
             >
-              {children}
+              {[children]}
             </Text>
           </div>
         </div>
