@@ -45,7 +45,7 @@ export const Button = React.forwardRef<never>(
           />
           <div
             className={cn(
-              "bg-green relative flex h-full items-center justify-center px-[50rem]",
+              "bg-green relative flex h-full items-center justify-center px-[50rem] py-[8rem]",
               styles.polygonContent,
               classNames?.content
             )}

@@ -1,7 +1,7 @@
 import { ChangeLanguageListbox } from "~/feautures/change-language/ui"
 
 import { LINK } from "~/shared/lib"
-import { Button, Icon } from "~/shared/ui"
+import { Button, Icon, Text } from "~/shared/ui"
 
 export const Home = () => {
   return (
@@ -29,11 +29,13 @@ export const Home = () => {
               <Button
                 as="a"
                 href={LINK.TELEGRAM}
-                classNames={{ content: "text-center" }}
+                // classNames={{ content: "text-center" }}
               >
                 <div className="flex items-center gap-[4rem]">
-                  <Icon.PinkFish className="h-[10rem] rotate-[-55deg]" />
-                  <span>Start fishing</span>
+                  <Icon.PinkFish className="min-w-[22rem] max-w-[22rem] rotate-[-55deg]" />
+                  <Text shadow className="text-center">
+                    Start fishing
+                  </Text>
                 </div>
               </Button>
             </div>
