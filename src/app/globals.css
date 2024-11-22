@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --pixel-size: 4px;
+}
+
 @layer base {
   @font-face {
     font-family: "Kemco Pixel";
