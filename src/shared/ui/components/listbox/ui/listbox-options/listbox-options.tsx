@@ -11,7 +11,7 @@ export const ListboxOptions = (props: ListboxOptionsProps) => {
     <Headless.ListboxOptions
       anchor="bottom"
       className={cn(
-        "w-[var(--button-width)] [--anchor-gap:0rem] [--anchor-padding:12rem]",
+        "flex w-[var(--button-width)] flex-col [--anchor-gap:0] [--anchor-padding:12rem] focus:outline-none",
         className
       )}
       {...rest}

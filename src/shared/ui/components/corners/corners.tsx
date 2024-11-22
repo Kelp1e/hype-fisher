@@ -18,6 +18,7 @@ export const Corners = React.forwardRef<never>(
       className,
       classNames,
       children,
+      ...rest
     } = props
 
     return (
@@ -28,9 +29,12 @@ export const Corners = React.forwardRef<never>(
           padding: `${size}rem`,
           clipPath: `polygon(${getCornersPolygon(`${size}rem`)})`,
         }}
-        className={cn("bg-white", classNames?.border)}
+        className={cn("bg-white", className)}
+        {...rest}
       >
-        <div className={cn("", className)}>{children}</div>
+        <div className={cn("bg-black", classNames?.content)}>
+          {typeof children === "function" ? children() : children}
+        </div>
       </Component>
     )
   }

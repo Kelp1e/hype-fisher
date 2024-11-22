@@ -16,8 +16,8 @@ export const Home = () => {
               <img src="/images/logo.png" alt="logo" className="w-[560rem]" />
               <Button>Start fishing</Button>
             </div>
-            <Listbox>
-              <ListboxButton>Open</ListboxButton>
+            <Listbox defaultValue="1">
+              <ListboxButton>{({ value }) => value}</ListboxButton>
               <ListboxOptions>
                 <ListboxOption value="1">1</ListboxOption>
                 <ListboxOption value="2">2</ListboxOption>

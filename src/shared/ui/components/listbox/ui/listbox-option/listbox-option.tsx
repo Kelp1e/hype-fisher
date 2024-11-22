@@ -1,6 +1,9 @@
+import { ComponentProps } from "react"
+
 import * as Headless from "@headlessui/react"
 
 import { cn } from "~/shared/lib"
+import { Corners } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"
 
@@ -9,13 +12,24 @@ export const ListboxOption = (props: ListboxOptionProps) => {
 
   return (
     <Headless.ListboxOption
+      as={(as: ComponentProps<typeof Corners>) => (
+        <Corners as={"button"} {...as} />
+      )}
       className={cn(
-        "eaten-corners mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-[0rem]",
+        "group/listbox-option bg-[#E97835] data-[selected]:bg-orange",
         className
       )}
+      classNames={{
+        content:
+          "bg-orange group-data-[selected]/listbox-option:bg-[#E97835] px-[12rem] text-left",
+      }}
       {...rest}
     >
-      <div className="bg-orange px-[12rem]">{children}</div>
+      {(option) => (
+        <div>
+          {typeof children === "function" ? children(option) : children}
+        </div>
+      )}
     </Headless.ListboxOption>
   )
 }
