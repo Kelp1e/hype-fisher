@@ -1,4 +1,4 @@
-import React, { ComponentProps } from "react"
+import React from "react"
 
 import * as Headless from "@headlessui/react"
 
@@ -12,11 +12,12 @@ export const ListboxOption = (props: ListboxOptionProps) => {
 
   return (
     <Headless.ListboxOption
-      as={React.forwardRef<HTMLButtonElement, ComponentProps<typeof Corners>>(
-        (asProps, ref) => (
-          <Corners as="button" size="4rem" ref={ref} {...asProps} />
-        )
-      )}
+      as={React.forwardRef<
+        HTMLButtonElement,
+        React.ComponentProps<typeof Corners>
+      >((asProps, ref) => (
+        <Corners as="button" size="4rem" ref={ref} {...asProps} />
+      ))}
       className={cn(
         "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
         className

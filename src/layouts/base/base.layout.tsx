@@ -1,7 +1,7 @@
-import { LayoutProps } from "~/layouts/layout.ts"
+import { LayoutProps } from "~/layouts/layout.props.ts"
 
 export const Base = (props: LayoutProps) => {
   const { children } = props
 
-  return <div>{children}</div>
+  return children
 }

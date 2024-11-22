@@ -5,6 +5,7 @@ export { Video } from "./video"
 export { Marquee } from "./marquee"
 export { Card } from "./card"
 export { Corners } from "./corners"
+export { Scene } from "./scene"
 export { Tooltip, TooltipTrigger, TooltipPanel } from "./tooltip"
 export {
   Listbox,

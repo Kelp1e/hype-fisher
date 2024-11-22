@@ -1,5 +1,7 @@
-import { ComponentProps } from "react"
+import React from "react"
 
 import * as Headless from "@headlessui/react"
 
-export type ListboxButtonProps = ComponentProps<typeof Headless.ListboxButton>
+export type ListboxButtonProps = React.ComponentProps<
+  typeof Headless.ListboxButton
+>
