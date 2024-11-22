@@ -26,7 +26,9 @@ export const Home = () => {
                 alt="hype hisher logo"
                 className="mt-[64rem] w-full max-w-[333rem]"
               />
-              <Button>Start fishing</Button>
+              <Button as="a" href={LINK.TELEGRAM}>
+                Start fishing
+              </Button>
             </div>
           </div>
         </div>
