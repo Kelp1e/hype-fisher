@@ -1,0 +1,120 @@
+:root {
+  --pixel-size: 4px;
+}
+
+.polygonWrapper {
+  clip-path: polygon(
+    calc(var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 3) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 3) calc(var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 5) calc(var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 5) calc(var(--pixel-size) * 0),
+    calc(100% - var(--pixel-size) * 5) calc(var(--pixel-size) * 0),
+    calc(100% - var(--pixel-size) * 5) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 3) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 3) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 1) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 1) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 3) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 3) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 5) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 5) calc(100% - var(--pixel-size) * 0),
+    calc(var(--pixel-size) * 5) calc(100% - var(--pixel-size) * 0),
+    calc(var(--pixel-size) * 5) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 3) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 3) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3)
+  );
+}
+
+.polygonInner {
+  clip-path: polygon(
+    calc(var(--pixel-size) * 0) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 2) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 2) calc(var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 4) calc(var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 4) calc(var(--pixel-size) * 0),
+    calc(100% - var(--pixel-size) * 4) calc(var(--pixel-size) * 0),
+    calc(100% - var(--pixel-size) * 4) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 2) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 2) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 0),
+    calc(var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 0),
+    calc(var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3)
+  );
+}
+
+.polygonContent {
+  clip-path: polygon(
+    calc(var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 2) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 2) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 4) calc(var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 4) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 6) calc(var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 6) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 4) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 4) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 2) calc(var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 2) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 4),
+    calc(100% - var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 4),
+    calc(100% - var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 4),
+    calc(100% - var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 3),
+    calc(100% - var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 6) calc(100% - var(--pixel-size) * 2),
+    calc(100% - var(--pixel-size) * 6) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 6) calc(100% - var(--pixel-size) * 1),
+    calc(var(--pixel-size) * 6) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 2),
+    calc(var(--pixel-size) * 4) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 2) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 3),
+    calc(var(--pixel-size) * 0) calc(100% - var(--pixel-size) * 3)
+  );
+}
+
+.polygonGlare {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 1),
+    calc(100% - var(--pixel-size) * 1) 100%,
+    0% 100%
+  );
+}
