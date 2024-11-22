@@ -26,13 +26,10 @@ export const Home = () => {
                 alt="hype hisher logo"
                 className="mt-[64rem] w-full max-w-[333rem]"
               />
-              <Button
-                as="a"
-                href={LINK.TELEGRAM}
-              >
+              <Button as="a" href={LINK.TELEGRAM}>
                 <div className="flex items-center gap-[4rem]">
                   <Icon.PinkFish className="min-w-[22rem] max-w-[22rem] rotate-[-55deg]" />
-                  <Text shadow className="text-center">
+                  <Text shadow className="whitespace-nowrap text-center">
                     Start fishing
                   </Text>
                 </div>
