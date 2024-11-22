@@ -32,7 +32,7 @@ export const Corners = React.forwardRef<never>(
         className={cn("bg-white", className)}
         {...rest}
       >
-        <div className={cn("bg-black", classNames?.content)}>
+        <div className={cn("h-full bg-black", classNames?.content)}>
           {typeof children === "function" ? children() : children}
         </div>
       </Component>
