@@ -89,7 +89,7 @@
   }
 
   body {
-    @apply font-de-pixel-klein text-[16rem] text-white;
+    @apply bg-[#222044] font-de-pixel-klein text-[16rem] text-white;
   }
 
   img {

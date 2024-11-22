@@ -25,7 +25,7 @@ export const Button = React.forwardRef<never>(
         ref={ref}
         {...rest}
         className={cn(
-          "bg-green-dark relative h-[50rem] p-[4rem] font-kemco text-white",
+          "bg-green-dark relative min-h-[50rem] p-[4rem] font-kemco text-white",
           styles.polygonWrapper,
           className
         )}

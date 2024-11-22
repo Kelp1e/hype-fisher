@@ -17,13 +17,10 @@ export const ListboxOption = (props: ListboxOptionProps) => {
           <Corners as="button" ref={ref} {...asProps} />
         )
       )}
-      className={cn(
-        "group/listbox-option bg-[#E97835] data-[selected]:bg-orange",
-        className
-      )}
+      className={cn("group/listbox-option bg-[#E97835]", className)}
       classNames={{
         content:
-          "bg-orange group-data-[selected]/listbox-option:bg-[#E97835] px-[12rem] text-left",
+          "bg-orange group-data-[active]/listbox-option:bg-[#E97835] px-[12rem] text-left",
       }}
       {...rest}
     >

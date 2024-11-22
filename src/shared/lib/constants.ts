@@ -1,3 +1,4 @@
 export const LINK = {
-  KELP1E_GITHUB: "https://github.com/Kelp1e",
+  TWITTER: "https://x.com/HypeFisherGame",
+  TELEGRAM: "https://t.me/hype_fisher_bot?start",
 }
