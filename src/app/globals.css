@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --pixel-size: 4px;
-}
-
 @layer base {
   @font-face {
     font-family: "Kemco Pixel";
@@ -89,7 +85,7 @@
   }
 
   body {
-    @apply bg-[#222044] font-de-pixel-klein text-[16rem] text-white;
+    @apply font-de-pixel-klein bg-[#222044] text-[16rem] text-white;
   }
 
   img {
@@ -100,24 +96,5 @@
 @layer components {
   .max-container {
     @apply w-full max-w-[1740rem] px-[20rem];
-  }
-}
-
-@layer utilities {
-  .eaten-corners {
-    clip-path: polygon(
-      calc(var(--pixel-size) * 1) 0%,
-      calc(100% - calc(var(--pixel-size) * 1)) 0%,
-      calc(100% - calc(var(--pixel-size) * 1)) calc(var(--pixel-size) * 1),
-      100% calc(var(--pixel-size) * 1),
-      100% calc(100% - var(--pixel-size)),
-      calc(100% - var(--pixel-size)) calc(100% - var(--pixel-size)),
-      calc(100% - var(--pixel-size)) 100%,
-      calc(var(--pixel-size) * 1) 100%,
-      calc(var(--pixel-size) * 1) calc(100% - var(--pixel-size) * 1),
-      0% calc(100% - var(--pixel-size)),
-      0% calc(var(--pixel-size) * 1),
-      calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 1)
-    );
   }
 }
