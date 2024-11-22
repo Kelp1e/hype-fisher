@@ -1,7 +1,7 @@
 import React from "react"
 
 import { cn } from "~/shared/lib"
-import { PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
+import { PolyRef, PolyRefComponent, PolyRefProps, Text } from "~/shared/ui"
 
 import styles from "./button.module.css"
 import { ButtonProps } from "./button.props.ts"
@@ -11,7 +11,13 @@ export const Button = React.forwardRef<never>(
     props: PolyRefProps<E, ButtonProps>,
     ref?: PolyRef<E>
   ) => {
-    const { as: Component = "button", className, children, ...rest } = props
+    const {
+      as: Component = "button",
+      className,
+      classNames,
+      children,
+      ...rest
+    } = props
 
     return (
       <Component
@@ -34,7 +40,8 @@ export const Button = React.forwardRef<never>(
           <div
             className={cn(
               "bg-green relative flex h-full items-center justify-center px-[50rem]",
-              styles.polygonContent
+              styles.polygonContent,
+              classNames?.content
             )}
           >
             <div
@@ -43,7 +50,7 @@ export const Button = React.forwardRef<never>(
                 styles.polygonGlare
               )}
             />
-            {children}
+            <Text shadow>{children}</Text>
           </div>
         </div>
       </Component>

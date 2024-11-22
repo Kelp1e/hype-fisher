@@ -1,3 +1,7 @@
 import React from "react"
 
-export type ButtonProps = React.HTMLAttributes<HTMLButtonElement>
+export type ButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
+  classNames?: {
+    content?: string
+  }
+}
