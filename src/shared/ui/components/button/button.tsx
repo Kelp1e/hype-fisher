@@ -47,7 +47,8 @@ export const Button = React.forwardRef<never>(
             <div
               className={cn(
                 "absolute left-[12rem] top-[4rem] h-[12rem] w-[16rem] bg-white",
-                styles.polygonGlare
+                styles.polygonGlare,
+                classNames?.glare
               )}
             />
             <Text shadow>{children}</Text>
