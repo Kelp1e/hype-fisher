@@ -16,7 +16,8 @@
     "^~/features",
     "^~/entities",
     "^~/shared",
-    "^[./]"
+	  "^[./](?!.*\\.module\\.css$)",
+	  "^[./].*\\.module\\.css$"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,

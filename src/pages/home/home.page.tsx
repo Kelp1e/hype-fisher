@@ -1,4 +1,10 @@
-import { Button } from "~/shared/ui"
+import {
+  Button,
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from "~/shared/ui"
 
 export const Home = () => {
   return (
@@ -10,6 +16,13 @@ export const Home = () => {
               <img src="/images/logo.png" alt="logo" className="w-[560rem]" />
               <Button>Start fishing</Button>
             </div>
+            <Listbox>
+              <ListboxButton>Open</ListboxButton>
+              <ListboxOptions>
+                <ListboxOption value="1">1</ListboxOption>
+                <ListboxOption value="2">2</ListboxOption>
+              </ListboxOptions>
+            </Listbox>
           </div>
         </div>
       </div>

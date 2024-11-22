@@ -1,6 +1,4 @@
-:root {
-  --pixel-size: 4px;
-}
+
 
 .polygonWrapper {
   clip-path: polygon(

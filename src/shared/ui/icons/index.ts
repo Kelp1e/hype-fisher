@@ -1,3 +1,4 @@
+import Chevron from "./chevron.svg"
 import GreenFish from "./green-fish.svg"
 import Moon from "./moon.svg"
 import OrangeFish from "./orange-fish.svg"
@@ -10,4 +11,5 @@ export const Icon = {
   User,
   OrangeFish,
   GreenFish,
+  Chevron,
 }

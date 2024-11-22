@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         kemco: ["Kemco Pixel", "sans-serif"],
+        "de-pixel-klein": ["DePixelKlein", "sans-serif"],
       },
       colors: {
         yellow: {
