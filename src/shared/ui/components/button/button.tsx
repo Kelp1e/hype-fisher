@@ -3,8 +3,9 @@ import React from "react"
 import { cn } from "~/shared/lib"
 import { PolyRef, PolyRefComponent, PolyRefProps, Text } from "~/shared/ui"
 
-import styles from "./button.module.css"
 import { ButtonProps } from "./button.props.ts"
+
+import styles from "./button.module.css"
 
 export const Button = React.forwardRef<never>(
   <E extends React.ElementType = "button">(
@@ -24,7 +25,7 @@ export const Button = React.forwardRef<never>(
         ref={ref}
         {...rest}
         className={cn(
-          "bg-green-dark font-kemco relative h-[50rem] p-[4rem] text-white",
+          "bg-green-dark relative h-[50rem] p-[4rem] font-kemco text-white",
           styles.polygonWrapper,
           className
         )}
