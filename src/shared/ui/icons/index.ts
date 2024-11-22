@@ -6,6 +6,7 @@ import PinkFish from "./pink-fish.svg"
 import Sun from "./sun.svg"
 import Telegram from "./telegram.svg"
 import User from "./user.svg"
+import Twitter from "./twitter.svg"
 
 export const Icon = {
   Moon,
@@ -16,4 +17,5 @@ export const Icon = {
   PinkFish,
   Chevron,
   Telegram,
+  Twitter,
 }

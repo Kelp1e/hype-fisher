@@ -1,19 +1,22 @@
 import { ChangeLanguageListbox } from "~/feautures/change-language/ui"
 
 import { LINK } from "~/shared/lib"
-import { Button } from "~/shared/ui"
+import { Button, Icon } from "~/shared/ui"
 
 export const Home = () => {
   return (
     <div>
-      <div
-        className="flex h-[100dvh] flex-1 bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat py-[20rem]">
+      <div className="flex h-[100dvh] flex-1 bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat py-[20rem]">
         <div className="max-container mx-auto flex flex-col">
           <header className="flex w-full items-center justify-between gap-[12rem]">
             <ChangeLanguageListbox />
             <div className="flex items-center gap-[12rem]">
-              <a href={LINK.TWITTER} className="size-[24rem] bg-blue-400" />
-              <a href={LINK.TELEGRAM} className="size-[24rem] bg-blue-400" />
+              <a href={LINK.TWITTER} className="">
+                <Icon.Twitter className="h-[24rem]" />
+              </a>
+              <a href={LINK.TELEGRAM} className="">
+                <Icon.Telegram className="h-[24rem]" />
+              </a>
             </div>
           </header>
           <div className="flex flex-1">
@@ -28,7 +31,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div>123123012</div>
     </div>
   )
 }
