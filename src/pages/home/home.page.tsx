@@ -29,7 +29,6 @@ export const Home = () => {
               <Button
                 as="a"
                 href={LINK.TELEGRAM}
-                // classNames={{ content: "text-center" }}
               >
                 <div className="flex items-center gap-[4rem]">
                   <Icon.PinkFish className="min-w-[22rem] max-w-[22rem] rotate-[-55deg]" />

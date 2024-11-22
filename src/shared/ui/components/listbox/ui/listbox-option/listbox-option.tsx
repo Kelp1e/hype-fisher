@@ -3,7 +3,7 @@ import React, { ComponentProps } from "react"
 import * as Headless from "@headlessui/react"
 
 import { cn } from "~/shared/lib"
-import { Corners } from "~/shared/ui"
+import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"
 
@@ -24,8 +24,11 @@ export const ListboxOption = (props: ListboxOptionProps) => {
       {...rest}
     >
       {(option) => (
-        <div className="bg-orange px-[12rem] text-left group-data-[active]/listbox-option:bg-[#E97835]">
-          {typeof children === "function" ? children(option) : children}
+        <div className="flex items-center justify-between gap-[8rem] bg-orange px-[12rem] text-left group-data-[active]/listbox-option:bg-[#E97835]">
+          <div>
+            {typeof children === "function" ? children(option) : children}
+          </div>
+          <Icon.Checked className="hidden h-[12rem] text-[#DF7434] group-data-[selected]/listbox-option:block group-data-[active]/listbox-option:text-orange" />
         </div>
       )}
     </Headless.ListboxOption>
