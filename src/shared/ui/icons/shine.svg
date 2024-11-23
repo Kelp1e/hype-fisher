@@ -1,0 +1,14 @@
+<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="8" width="1" height="1" fill="currentColor"/>
+    <rect x="7" y="7" width="1" height="1" fill="currentColor"/>
+    <path d="M8 2H9V7H8V2Z" fill="currentColor"/>
+    <rect y="9" width="1" height="1" transform="rotate(-90 0 9)" fill="currentColor"/>
+    <rect x="7" y="10" width="1" height="1" transform="rotate(-90 7 10)" fill="currentColor"/>
+    <path d="M2 9L2 8L7 8L7 9L2 9Z" fill="currentColor"/>
+    <rect x="9" y="17" width="1" height="1" transform="rotate(-180 9 17)" fill="currentColor"/>
+    <rect x="10" y="10" width="1" height="1" transform="rotate(-180 10 10)" fill="currentColor"/>
+    <path d="M9 15L8 15L8 10L9 10L9 15Z" fill="currentColor"/>
+    <rect x="17" y="8" width="1" height="1" transform="rotate(90 17 8)" fill="currentColor"/>
+    <rect x="10" y="7" width="1" height="1" transform="rotate(90 10 7)" fill="currentColor"/>
+    <path d="M15 8L15 9L10 9L10 8L15 8Z" fill="currentColor"/>
+</svg>

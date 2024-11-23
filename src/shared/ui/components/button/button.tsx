@@ -25,39 +25,47 @@ export const Button = React.forwardRef<never>(
         ref={ref}
         {...rest}
         className={cn(
-          "bg-green-dark relative min-h-[50rem] p-[4rem] font-kemco text-white",
-          styles.polygonWrapper,
+          "relative min-h-[50rem] font-kemco text-white",
+          styles.button,
           className
         )}
       >
-        <div className={cn("relative h-full", styles.polygonInner)}>
-          <div
-            className={cn(
-              "absolute inset-x-0 bottom-1/2 top-0 z-[-1] bg-[#2E9F45]",
-              classNames?.top
-            )}
-          />
-          <div
-            className={cn(
-              "absolute inset-x-0 bottom-0 top-1/2 z-[-1] bg-[#569F37]",
-              classNames?.bottom
-            )}
-          />
-          <div
-            className={cn(
-              "bg-green relative flex h-full items-center justify-center px-[50rem] py-[8rem]",
-              styles.polygonContent,
-              classNames?.content
-            )}
-          >
+        <div
+          className={cn(
+            "h-full bg-green-dark p-[4rem]",
+            styles.polygonBorder,
+            classNames?.border
+          )}
+        >
+          <div className={cn("relative h-full", styles.polygonInner)}>
             <div
               className={cn(
-                "absolute left-[12rem] top-[4rem] h-[12rem] w-[16rem] bg-white",
-                styles.polygonGlare,
-                classNames?.glare
+                "absolute inset-x-0 bottom-1/2 top-0 z-[-1] bg-[#2E9F45]",
+                classNames?.top
               )}
             />
-            {children}
+            <div
+              className={cn(
+                "absolute inset-x-0 bottom-0 top-1/2 z-[-1] bg-[#569F37]",
+                classNames?.bottom
+              )}
+            />
+            <div
+              className={cn(
+                "relative flex h-full items-center justify-center bg-green px-[50rem] py-[8rem]",
+                styles.polygonContent,
+                classNames?.content
+              )}
+            >
+              <div
+                className={cn(
+                  "absolute left-[12rem] top-[4rem] h-[12rem] w-[16rem] bg-white",
+                  styles.polygonGlare,
+                  classNames?.glare
+                )}
+              />
+              {children}
+            </div>
           </div>
         </div>
       </Component>

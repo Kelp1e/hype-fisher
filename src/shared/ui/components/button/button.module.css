@@ -1,6 +1,4 @@
-
-
-.polygonWrapper {
+.polygonBorder {
   clip-path: polygon(
     calc(var(--pixel-size) * 0) calc(var(--pixel-size) * 3),
     calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 3),
