@@ -16,7 +16,7 @@ export const Link = React.forwardRef<never>(
       <Component
         ref={ref}
         className={cn(
-          "border-b-[2rem] border-b-transparent font-kemco hover:border-b-orange",
+          "border-b-[2rem] border-b-transparent font-kemco leading-none hover:border-b-orange",
           className
         )}
         {...rest}

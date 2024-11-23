@@ -7,7 +7,11 @@ export const Card = (props: CardProps) => {
   const { className, classNames, children } = props
 
   return (
-    <Corners as="div" size="8rem" className={cn("relative", className)}>
+    <Corners
+      as="div"
+      size="8rem"
+      className={cn("relative bg-red-400 p-[2rem]", className)}
+    >
       <div
         className={cn(
           "absolute inset-x-0 top-0 h-[10rem] bg-[#4C4A68]",
@@ -35,11 +39,9 @@ export const Card = (props: CardProps) => {
       <Corners
         as="div"
         size="8rem"
-        className={cn("m-[2rem]", classNames?.border)}
+        className={cn("h-full bg-[#222044] p-[8rem]", classNames?.content)}
       >
-        <div className={cn("bg-[#222044] p-[8rem]", classNames?.content)}>
-          {children}
-        </div>
+        {children}
       </Corners>
     </Corners>
   )

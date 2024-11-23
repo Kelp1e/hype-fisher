@@ -8,7 +8,7 @@ import { TextProps } from "./text.props.ts"
 export const Text = React.forwardRef<never>(
   <E extends React.ElementType = "span">(
     props: PolyRefProps<E, TextProps>,
-    ref?: PolyRef<E>,
+    ref?: PolyRef<E>
   ) => {
     const {
       as: Component = "span",
@@ -24,8 +24,8 @@ export const Text = React.forwardRef<never>(
         {shadow && (
           <div
             className={cn(
-              "absolute bottom-[-1rem] left-[-1rem] z-[-1] text-black",
-              classNames?.shadow,
+              "pointer-events-none absolute bottom-[-1rem] left-[-1rem] z-[-1] select-none text-black",
+              classNames?.shadow
             )}
           >
             {children}
@@ -34,5 +34,5 @@ export const Text = React.forwardRef<never>(
         {children}
       </Component>
     )
-  },
+  }
 ) as PolyRefComponent<"span", TextProps>

@@ -7,7 +7,6 @@ export type CardProps = {
     right?: string
     bottom?: string
     left?: string
-    border?: string
     content?: string
   }
 } & PropsWithChildren
