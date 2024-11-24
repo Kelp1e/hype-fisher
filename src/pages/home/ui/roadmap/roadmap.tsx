@@ -19,7 +19,7 @@ export const Roadmap = () => {
           <p className="text-[16rem]">TURN YOUR CATCH INTO REWARDS</p>
         </div>
         <div
-          className="mx-auto grid max-w-[250rem] grid-cols-1 gap-[20rem] min-[420px]:max-w-[520rem] min-[420px]:grid-cols-2 min-[768px]:max-w-full min-[768px]:grid-cols-4">
+          className="mx-auto grid gap-[20rem] max-w-[520rem] grid-cols-2 min-[768px]:max-w-full min-[768px]:grid-cols-4">
           <RoadmapCard
             current
             date="OCTOBER 24"

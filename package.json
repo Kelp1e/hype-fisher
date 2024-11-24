@@ -11,7 +11,6 @@
     "server": "mock-config-server"
   },
   "dependencies": {
-    "@floating-ui/react": "^0.26.17",
     "@headlessui/react": "^2.0.4",
     "atomic-router": "^0.10.1",
     "atomic-router-react": "^0.10.0",

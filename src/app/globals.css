@@ -81,9 +81,9 @@
   }
 
   html {
-    font-size: calc(100vw / 320);
+    font-size: calc(100vw / 430);
 
-    @media (min-width: 320px) {
+    @media (min-width: 430px) {
       font-size: 1px;
     }
   }

@@ -26,7 +26,7 @@ export const Start = () => {
             <img
               src="/images/logo.png"
               alt="hype hisher logo"
-              className="mt-[64rem] w-full lg:max-w-full max-w-[333rem]"
+              className="mt-[64rem] w-full max-w-[333rem] lg:max-w-full"
             />
             <StartFishingButton />
           </div>
