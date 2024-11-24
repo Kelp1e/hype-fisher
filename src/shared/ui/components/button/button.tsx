@@ -25,7 +25,7 @@ export const Button = React.forwardRef<never>(
         ref={ref}
         {...rest}
         className={cn(
-          "relative min-h-[50rem] font-kemco text-white",
+          "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[1rem]",
           styles.button,
           className
         )}
@@ -67,6 +67,7 @@ export const Button = React.forwardRef<never>(
               {children}
             </div>
           </div>
+          <div className="absolute inset-0 z-[2] bg-white/5 opacity-0 group-hover/button:opacity-100"></div>
         </div>
       </Component>
     )

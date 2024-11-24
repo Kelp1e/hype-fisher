@@ -17,10 +17,10 @@ export const Start = () => {
             <ToggleMusicCheckbox />
           </div>
           <div className="flex items-center gap-[12rem]">
-            <a href={LINK.TWITTER}>
+            <a href={LINK.TWITTER} className="hover:bottom-[1rem] relative">
               <Icon.Twitter className="h-[24rem]" />
             </a>
-            <a href={LINK.TELEGRAM}>
+            <a href={LINK.TELEGRAM} className="hover:bottom-[1rem] relative">
               <Icon.Telegram className="h-[24rem]" />
             </a>
           </div>
