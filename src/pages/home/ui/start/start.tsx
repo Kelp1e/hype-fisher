@@ -21,12 +21,12 @@ export const Start = () => {
             </a>
           </div>
         </header>
-        <div className="flex flex-1 sm:justify-between">
-          <div className="flex w-full flex-1 flex-col items-center justify-between gap-[40rem] md:justify-start">
+        <div className="flex flex-1 lg:w-1/3">
+          <div className="flex w-full flex-1 flex-col items-center justify-between gap-[40rem] lg:justify-start">
             <img
               src="/images/logo.png"
               alt="hype hisher logo"
-              className="mt-[64rem] w-full max-w-[333rem]"
+              className="mt-[64rem] w-full lg:max-w-full max-w-[333rem]"
             />
             <StartFishingButton />
           </div>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --pixel-size: 4px;
+  --pixel-size: 4rem;
 }
 
 @layer base {
@@ -81,15 +81,15 @@
   }
 
   html {
-    font-size: 1px;
+    font-size: calc(100vw / 320);
 
-    /*@media (max-width: 1920px) {*/
-    /*  font-size: calc(100vw / 1920);*/
-    /*}*/
+    @media (min-width: 320px) {
+      font-size: 1px;
+    }
   }
 
   body {
-    @apply font-de-pixel-klein bg-sky-950 text-[16rem] text-white;
+    @apply bg-sky-950 font-de-pixel-klein text-[16rem] text-white;
   }
 
   img {
