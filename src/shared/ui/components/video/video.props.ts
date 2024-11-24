@@ -1,3 +1,5 @@
 import React from "react"
 
-export type VideoProps = React.HTMLAttributes<HTMLVideoElement>
+export type VideoProps = {
+  src?: string
+} & React.HTMLAttributes<HTMLVideoElement>

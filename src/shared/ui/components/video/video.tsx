@@ -1,7 +1,11 @@
 import { VideoProps } from "./video.props.ts"
 
 export const Video = (props: VideoProps) => {
-  const { ...rest } = props
+  const { src, ...rest } = props
 
-  return <video {...rest} muted autoPlay loop playsInline />
+  return (
+    <video {...rest} muted autoPlay loop playsInline>
+      <source src={src} />
+    </video>
+  )
 }
