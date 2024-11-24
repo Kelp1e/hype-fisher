@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import {
+  Icon,
   Listbox,
   ListboxButton,
   ListboxOption,
@@ -16,7 +17,12 @@ export const ChangeLanguageListbox = () => {
     <div>
       <Listbox value={i18n.language} onChange={i18n.changeLanguage}>
         <ListboxButton className="w-[80rem] uppercase">
-          {({ value }) => <div>{value}</div>}
+          {({ value }) => (
+            <div className="flex items-center gap-[8rem]">
+              <Icon.FlagUsa className="h-[16rem]" />
+              <span>{value}</span>
+            </div>
+          )}
         </ListboxButton>
         <ListboxOptions>
           {languages?.map((language) => (
@@ -26,6 +32,7 @@ export const ChangeLanguageListbox = () => {
               className="uppercase"
             >
               <div className="flex items-center gap-[8rem]">
+                <Icon.FlagUsa className="h-[16rem]" />
                 <span>{language}</span>
               </div>
             </ListboxOption>

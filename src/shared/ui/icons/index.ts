@@ -1,5 +1,6 @@
 import Checked from "./checked.svg"
 import Chevron from "./chevron.svg"
+import FlagUsa from "./flag-usa.svg"
 import GreenFish from "./green-fish.svg"
 import Moon from "./moon.svg"
 import OrangeFish from "./orange-fish.svg"
@@ -22,4 +23,5 @@ export const Icon = {
   Twitter,
   Checked,
   Shine,
+  FlagUsa,
 }
