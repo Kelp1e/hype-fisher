@@ -6,6 +6,8 @@ import Moon from "./moon.svg"
 import OrangeFish from "./orange-fish.svg"
 import PinkFish from "./pink-fish.svg"
 import Shine from "./shine.svg"
+import SoundOff from "./sound-off.svg"
+import SoundOn from "./sound-on.svg"
 import Sun from "./sun.svg"
 import Telegram from "./telegram.svg"
 import Twitter from "./twitter.svg"
@@ -24,4 +26,6 @@ export const Icon = {
   Checked,
   Shine,
   FlagUsa,
+  SoundOn,
+  SoundOff,
 }

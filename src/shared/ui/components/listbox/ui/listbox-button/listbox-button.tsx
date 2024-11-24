@@ -19,7 +19,7 @@ export const ListboxButton = (props: ListboxButtonProps) => {
         <Corners as="button" size="4rem" ref={ref} {...asProps} />
       ))}
       className={cn(
-        "group/listbox-button h-[30rem] bg-[#DF7434] p-[4rem]",
+        "group/listbox-button h-[30rem] hover:bg-orange data-[open]:bg-orange bg-[#DF7434] p-[4rem]",
         className
       )}
       {...rest}

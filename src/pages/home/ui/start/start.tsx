@@ -1,5 +1,6 @@
 import { ChangeLanguageListbox } from "~/feautures/change-language/ui"
 import { StartFishingButton } from "~/feautures/start-fishing/ui"
+import { ToggleMusicCheckbox } from "~/feautures/toggle-music/ui"
 
 import { LINK } from "~/shared/lib"
 import { Icon } from "~/shared/ui"
@@ -11,7 +12,10 @@ export const Start = () => {
     <Background className="flex h-fit min-h-[100dvh] flex-1 py-[20rem]">
       <div className="max-container mx-auto flex flex-col">
         <header className="flex w-full items-center justify-between gap-[12rem]">
-          <ChangeLanguageListbox />
+          <div className="flex items-center gap-[12rem]">
+            <ChangeLanguageListbox />
+            <ToggleMusicCheckbox />
+          </div>
           <div className="flex items-center gap-[12rem]">
             <a href={LINK.TWITTER}>
               <Icon.Twitter className="h-[24rem]" />
