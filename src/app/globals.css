@@ -80,9 +80,9 @@
     font-style: normal;
   }
 
-	*:focus {
-		outline: none;
-	}
+  *:focus {
+    outline: none;
+  }
 
   html {
     font-size: calc(100vw / 430);

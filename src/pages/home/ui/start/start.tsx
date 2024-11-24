@@ -25,7 +25,7 @@ export const Start = () => {
             </a>
           </div>
         </header>
-        <div className="flex flex-1 lg:w-1/3">
+        <div className="flex flex-1 lg:items-center relative lg:top-[-10%] lg:w-1/3">
           <div className="flex w-full flex-1 flex-col items-center justify-between gap-[40rem] lg:justify-start">
             <img
               src="/images/logo.png"
