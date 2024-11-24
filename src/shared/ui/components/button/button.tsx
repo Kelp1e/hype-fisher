@@ -1,6 +1,7 @@
 import React from "react"
 
 import { cn } from "~/shared/lib"
+import { sound } from "~/shared/lib/sounds.ts"
 import { PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
 
 import { ButtonProps } from "./button.props.ts"
@@ -16,6 +17,7 @@ export const Button = React.forwardRef<never>(
       as: Component = "button",
       className,
       classNames,
+      onClick,
       children,
       ...rest
     } = props
@@ -24,6 +26,10 @@ export const Button = React.forwardRef<never>(
       <Component
         ref={ref}
         {...rest}
+        onClick={() => {
+          sound("click")
+          onClick?.()
+        }}
         className={cn(
           "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[1rem]",
           styles.button,

@@ -3,12 +3,13 @@ import React from "react"
 import * as Headless from "@headlessui/react"
 
 import { cn } from "~/shared/lib"
+import { sound } from "~/shared/lib/sounds.ts"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxButtonProps } from "./listbox-button.props.ts"
 
 export const ListboxButton = (props: ListboxButtonProps) => {
-  const { className, children, ...rest } = props
+  const { onClick, className, children, ...rest } = props
 
   return (
     <Headless.ListboxButton
@@ -18,8 +19,12 @@ export const ListboxButton = (props: ListboxButtonProps) => {
       >((asProps, ref) => (
         <Corners as="button" size="4rem" ref={ref} {...asProps} />
       ))}
+      onClick={() => {
+        sound("click")
+        onClick?.()
+      }}
       className={cn(
-        "group/listbox-button h-[30rem] hover:bg-orange data-[open]:bg-orange bg-[#DF7434] p-[4rem]",
+        "group/listbox-button h-[30rem] bg-[#DF7434] p-[4rem] hover:bg-orange data-[open]:bg-orange",
         className
       )}
       {...rest}

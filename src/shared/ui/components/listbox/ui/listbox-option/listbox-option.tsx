@@ -3,12 +3,13 @@ import React from "react"
 import * as Headless from "@headlessui/react"
 
 import { cn } from "~/shared/lib"
+import { sound } from "~/shared/lib/sounds.ts"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"
 
 export const ListboxOption = (props: ListboxOptionProps) => {
-  const { className, children, ...rest } = props
+  const { onClick, className, children, ...rest } = props
 
   return (
     <Headless.ListboxOption
@@ -18,6 +19,10 @@ export const ListboxOption = (props: ListboxOptionProps) => {
       >((asProps, ref) => (
         <Corners as="button" size="4rem" ref={ref} {...asProps} />
       ))}
+      onClick={() => {
+        sound("click")
+        onClick?.()
+      }}
       className={cn(
         "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
         className

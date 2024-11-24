@@ -2,6 +2,7 @@ import React from "react"
 
 import { Checkbox } from "@headlessui/react"
 
+import { sound } from "~/shared/lib/sounds.ts"
 import { Corners, Icon } from "~/shared/ui"
 
 export const ToggleMusicCheckbox = () => {
@@ -27,6 +28,9 @@ export const ToggleMusicCheckbox = () => {
         as={Checkbox}
         checked={isEnabled}
         onChange={handleOnChange}
+        onClick={() => {
+          sound("click")
+        }}
         size="4rem"
         className="group/checkbox size-[30rem] cursor-pointer bg-[#DF7434] p-[4rem] hover:bg-orange"
       >
