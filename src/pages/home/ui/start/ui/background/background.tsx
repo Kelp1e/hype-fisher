@@ -1,6 +1,9 @@
 import { cn } from "~/shared/lib"
+import { Plane } from "~/shared/ui"
 
 import { BackgroundProps } from "./background.props.ts"
+
+import styles from "./backgroun.module.css"
 
 export const Background = (props: BackgroundProps) => {
   const { className, children } = props
@@ -12,6 +15,16 @@ export const Background = (props: BackgroundProps) => {
         className
       )}
     >
+      <div className="absolute inset-0">
+        <div
+          className={cn(
+            "relative mt-[40rem] flex w-full justify-end",
+            styles.plane
+          )}
+        >
+          <Plane className={cn("h-[100rem]")} />
+        </div>
+      </div>
       {/*<img*/}
       {/*  src="/gifs/test.gif"*/}
       {/*  alt="fisher"*/}
