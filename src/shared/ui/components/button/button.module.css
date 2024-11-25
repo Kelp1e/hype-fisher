@@ -114,3 +114,23 @@
     0% 100%
   );
 }
+
+.polygonGlimmer {
+  clip-path: polygon(0 0, 29% 0, 100% 100%, 73% 100%);
+}
+
+.glimmer {
+  animation: glimmer 5s infinite;
+}
+
+@keyframes glimmer {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
