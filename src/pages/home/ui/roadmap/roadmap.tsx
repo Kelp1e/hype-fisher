@@ -33,7 +33,7 @@ export const Roadmap = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5, // Длительность анимации
+        duration: 0.5,
       },
     },
   }

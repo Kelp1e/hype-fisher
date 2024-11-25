@@ -2,8 +2,6 @@ import { cn } from "~/shared/lib"
 
 import { FisherProps } from "./fisher.props.ts"
 
-import styles from "./fisher.module.css"
-
 export const Fisher = (props: FisherProps) => {
   const { value = "boy", className } = props
 
@@ -19,17 +17,14 @@ export const Fisher = (props: FisherProps) => {
         <img
           src={imageUrl}
           alt={`fisher-${value}`}
-          className={cn(
-            "relative h-full w-full object-contain object-bottom",
-            styles.fisher
-          )}
+          className="animate-flying-y relative h-full w-full object-contain object-bottom"
         />
       </div>
       <div className="absolute inset-x-[10%] bottom-0">
         <img
           src="/images/wave.png"
-          alt=""
-          className={cn("h-full w-full", styles.wave)}
+          alt="wave"
+          className="animate-flying-x h-full w-full"
         />
       </div>
     </div>
