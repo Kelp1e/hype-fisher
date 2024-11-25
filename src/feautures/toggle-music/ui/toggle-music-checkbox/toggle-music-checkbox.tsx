@@ -2,7 +2,7 @@ import React from "react"
 
 import { Checkbox } from "@headlessui/react"
 
-import { sound } from "~/shared/lib/sounds.ts"
+import { sound } from "~/shared/lib"
 import { Corners, Icon } from "~/shared/ui"
 
 export const ToggleMusicCheckbox = () => {

@@ -3,7 +3,7 @@ import React from "react"
 import * as Headless from "@headlessui/react"
 
 import { cn } from "~/shared/lib"
-import { sound } from "~/shared/lib/sounds.ts"
+import { sound } from "~/shared/lib"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"

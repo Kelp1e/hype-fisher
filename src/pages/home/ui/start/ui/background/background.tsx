@@ -2,8 +2,7 @@ import React from "react"
 
 import { Fisher } from "~/pages/home/ui/start/ui"
 
-import { cn } from "~/shared/lib"
-import { sound } from "~/shared/lib/sounds.ts"
+import { cn, sound } from "~/shared/lib"
 
 import { BackgroundProps } from "./background.props.ts"
 

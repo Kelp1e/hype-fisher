@@ -1,7 +1,6 @@
 import React from "react"
 
-import { cn } from "~/shared/lib"
-import { sound } from "~/shared/lib/sounds.ts"
+import { cn, sound } from "~/shared/lib"
 import { Icon, PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
 
 import { ButtonProps } from "./button.props.ts"
