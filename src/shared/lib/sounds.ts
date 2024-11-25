@@ -1,9 +1,8 @@
-const click = new Audio("/sounds/click.ogg")
+const click = new Audio("/sounds/click.mp3")
 
-export const sound = (type: "click" | "hover") => {
+export const sound = (type: "click") => {
   const audio = {
     click: click,
-    hover: click,
   }[type]
 
   audio.currentTime = 0
