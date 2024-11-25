@@ -6,9 +6,13 @@ import { sound } from "~/shared/lib/sounds.ts"
 import { Corners, Icon } from "~/shared/ui"
 
 export const ToggleMusicCheckbox = () => {
+  const [audio] = React.useState(new Audio("/audios/music.mp3"))
+
   const [isEnabled, setIsEnabled] = React.useState<boolean>(false)
 
-  const audioRef = React.useRef<HTMLAudioElement>(null)
+  React.useEffect(() => {
+    audio.loop = true
+  }, [audio])
 
   const SoundIcon = isEnabled ? Icon.SoundOn : Icon.SoundOff
 
@@ -16,9 +20,9 @@ export const ToggleMusicCheckbox = () => {
     setIsEnabled(checked)
 
     if (checked) {
-      audioRef.current?.play()
+      audio?.play()
     } else {
-      audioRef.current?.pause()
+      audio?.pause()
     }
   }
 
@@ -38,7 +42,6 @@ export const ToggleMusicCheckbox = () => {
           <SoundIcon className="h-[14rem] text-white" />
         </div>
       </Corners>
-      <audio src="/audios/music.mp3" ref={audioRef} loop></audio>
     </>
   )
 }
