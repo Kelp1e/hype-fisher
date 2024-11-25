@@ -5,9 +5,15 @@ import { motion, useInView } from "framer-motion"
 import { Icon, RoadmapCard, Scene, Text } from "~/shared/ui"
 
 export const Roadmap = () => {
+  const titleRef = React.useRef<HTMLDivElement>(null)
   const cardsRef = React.useRef<HTMLDivElement>(null)
 
-  const inView = useInView(cardsRef, {
+  const titleInView = useInView(titleRef, {
+    once: true,
+    amount: 0.5,
+  })
+
+  const cardsInView = useInView(cardsRef, {
     once: true,
     amount: 0.5,
   })
@@ -38,13 +44,34 @@ export const Roadmap = () => {
     },
   }
 
+  const title = {
+    hidden: {
+      opacity: 0,
+      y: -50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    },
+  }
+
   return (
     <Scene
       src="/videos/underwater.mp4"
       className="relative h-fit min-h-[100dvh] pb-[40rem] pt-[60rem]"
     >
       <div className="max-container mx-auto flex flex-col gap-[30rem]">
-        <div className="flex flex-col items-center gap-[20rem] text-center">
+        <motion.div
+          ref={titleRef}
+          className="flex flex-col items-center gap-[20rem] text-center"
+          variants={title}
+          initial="hidden"
+          animate={titleInView ? "visible" : "hidden"}
+        >
           <Text
             as="h1"
             className="font-kemco text-[24rem] leading-none min-[1024px]:text-[64rem]"
@@ -53,14 +80,14 @@ export const Roadmap = () => {
           >
             Roadmap
           </Text>
-          <p className="text-[16rem]">TURN YOUR CATCH INTO REWARDS</p>
-        </div>
+          <p className="text-[16rem] uppercase">Turn your catch into rewards</p>
+        </motion.div>
         <motion.div
           ref={cardsRef}
           className="mx-auto grid max-w-[520rem] grid-cols-2 gap-[20rem] min-[768px]:max-w-full min-[768px]:grid-cols-4"
           variants={cards}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          animate={cardsInView ? "visible" : "hidden"}
         >
           <motion.div variants={card}>
             <RoadmapCard
