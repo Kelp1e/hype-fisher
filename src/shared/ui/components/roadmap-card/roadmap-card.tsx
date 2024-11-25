@@ -10,6 +10,7 @@ import { RoadmapCardProps } from "./roadmap-card.props.ts"
 export const RoadmapCard = (props: RoadmapCardProps) => {
   const { date, icon, bullets, current = false } = props
 
+  // TODO: Try to remove state
   const [isBouncing, setIsBouncing] = React.useState<boolean>(false)
 
   const handleOnIconClick = () => {
@@ -34,6 +35,7 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
             {date}
           </h1>
           <div onClick={handleOnIconClick} className="relative cursor-pointer">
+            {/*TODO: Make a "steps" animation*/}
             <motion.div
               animate={{
                 y: isBouncing ? "-10rem" : 0,
