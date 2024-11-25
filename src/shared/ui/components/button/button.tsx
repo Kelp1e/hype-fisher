@@ -31,7 +31,7 @@ export const Button = React.forwardRef<never>(
           onClick?.()
         }}
         className={cn(
-          "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[1rem]",
+          "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[2rem]",
           styles.button,
           className
         )}
