@@ -2,7 +2,7 @@ import React from "react"
 
 import { cn } from "~/shared/lib"
 import { sound } from "~/shared/lib/sounds.ts"
-import { PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
+import { Icon, PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
 
 import { ButtonProps } from "./button.props.ts"
 
@@ -73,12 +73,9 @@ export const Button = React.forwardRef<never>(
               {children}
             </div>
           </div>
-          <div className="absolute inset-0 z-[2] bg-white/5 opacity-0 group-hover/button:opacity-100"></div>
+          <div className="absolute inset-0 z-[2] bg-white/5 opacity-0 group-hover/button:opacity-100" />
           <div
-            className={cn(
-              "absolute inset-y-0 left-[-100%]",
-              styles.glimmer
-            )}
+            className={cn("absolute inset-y-0 left-[-100%]", styles.glimmer)}
           >
             <div
               className={cn(
@@ -87,6 +84,9 @@ export const Button = React.forwardRef<never>(
               )}
             />
           </div>
+        </div>
+        <div className={cn("absolute left-[-2rem] top-[-2rem]", styles.shine)}>
+          <Icon.Shine className="h-[24rem] text-white" />
         </div>
       </Component>
     )
