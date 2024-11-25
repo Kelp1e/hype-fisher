@@ -1,28 +1,43 @@
+import React from "react"
+
+import { Fisher } from "~/pages/home/ui/start/ui"
+
 import { cn } from "~/shared/lib"
+import { sound } from "~/shared/lib/sounds.ts"
 
 import { BackgroundProps } from "./background.props.ts"
 
 export const Background = (props: BackgroundProps) => {
   const { className, children } = props
 
+  const [fisher, setFisher] =
+    React.useState<React.ComponentProps<typeof Fisher>["value"]>("boy")
+
+  const onFisherClick = () => {
+    setFisher((prev) =>
+      prev === "boy" ? "girl" : prev === "girl" ? "old" : "boy"
+    )
+
+    sound("click")
+  }
+
   return (
     <div
       className={cn(
-        "relative bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat",
+        "relative overflow-hidden bg-[url('/images/background.png')] bg-cover bg-center bg-no-repeat",
         className
       )}
     >
-      <div className="absolute inset-0"></div>
-      {/*<img*/}
-      {/*  src="/gifs/test.gif"*/}
-      {/*  alt="fisher"*/}
-      {/*  className="absolute left-0 top-0 h-[120rem] w-[234rem] border"*/}
-      {/*/>*/}
-      {/*<img*/}
-      {/*  src="/gifs/test.gif"*/}
-      {/*  alt="fisher"*/}
-      {/*  className="absolute bottom-0 right-0 h-[165rem] w-[325rem] border"*/}
-      {/*/>*/}
+      <div className="absolute inset-0">
+        <div className="hidden h-full items-end justify-end lg:flex">
+          <div
+            className="h-[50%] cursor-pointer xl:h-[85%]"
+            onClick={onFisherClick}
+          >
+            <Fisher value={fisher} className="h-full" />
+          </div>
+        </div>
+      </div>
       {children}
     </div>
   )

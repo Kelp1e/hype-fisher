@@ -1,0 +1,31 @@
+.fisher {
+  animation: flying-fisher 2s steps(4, end) infinite;
+}
+
+@keyframes flying-fisher {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave {
+  animation: flying-wave 2s steps(4, end) infinite;
+}
+
+@keyframes flying-wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-4rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
