@@ -35,13 +35,11 @@ export const Start = () => {
         </header>
         <div className="relative flex flex-1 lg:top-[-10%] lg:w-1/3 lg:items-center">
           <div className="flex w-full flex-1 flex-col items-center justify-between gap-[40rem] lg:justify-start">
-            <a href={LINK.TWITTER} target="_blank">
-              <img
-                src="/images/logo.png"
-                alt="hype hisher logo"
-                className="animate-flying-y relative mt-[64rem] block w-full max-w-[333rem] lg:max-w-full"
-              />
-            </a>
+            <img
+              src="/images/logo.png"
+              alt="hype hisher logo"
+              className="animate-flying-y relative mt-[64rem] block w-full max-w-[333rem] lg:max-w-full"
+            />
             <StartFishingButton />
           </div>
         </div>
