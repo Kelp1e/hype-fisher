@@ -120,15 +120,28 @@
 }
 
 .glimmer {
-  animation: glimmer 5s infinite;
+  animation: glimmer-repeat 8s infinite;
 }
 
-@keyframes glimmer {
+@keyframes glimmer-repeat {
   0% {
-    left: 0;
+    left: -100%;
   }
   10% {
     left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.button:hover .glimmer {
+  animation: glimmer-hover 0.5s ease-out forwards;
+}
+
+@keyframes glimmer-hover {
+  0% {
+    left: -100%;
   }
   100% {
     left: 100%;

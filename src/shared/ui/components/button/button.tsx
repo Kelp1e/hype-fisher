@@ -76,7 +76,7 @@ export const Button = React.forwardRef<never>(
           <div className="absolute inset-0 z-[2] bg-white/5 opacity-0 group-hover/button:opacity-100"></div>
           <div
             className={cn(
-              "absolute inset-y-0 left-[60rem]",
+              "absolute inset-y-0 left-[-100%]",
               styles.glimmer
             )}
           >
