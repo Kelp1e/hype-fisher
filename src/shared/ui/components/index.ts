@@ -7,6 +7,7 @@ export { Card } from "./card"
 export { RoadmapCard } from "./roadmap-card"
 export { Corners } from "./corners"
 export { Scene } from "./scene"
+export { Flag } from "./flag"
 export {
   Listbox,
   ListboxButton,

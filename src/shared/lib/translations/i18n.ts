@@ -21,20 +21,20 @@ i18n
       ru: {
         translation: ru,
       },
-      es: {
-        translation: es,
+      de: {
+        translation: de,
       },
       fr: {
         translation: fr,
       },
-      hi: {
-        translation: hi,
+      es: {
+        translation: es,
       },
       id: {
         translation: id,
       },
-      de: {
-        translation: de,
+      hi: {
+        translation: hi,
       },
     },
     lng: "en",

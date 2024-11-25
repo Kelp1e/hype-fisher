@@ -11,7 +11,7 @@ export const FlyingLogo = (props: FlyingLogoProps) => {
     <img
       src="/images/logo.png"
       alt="hype hisher logo"
-      className={cn("relative", styles.flying, className)}
+      className={cn("relative block", styles.flyingLogo, className)}
     />
   )
 }

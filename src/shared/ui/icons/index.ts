@@ -1,6 +1,13 @@
 import Checked from "./checked.svg"
 import Chevron from "./chevron.svg"
 import FlagUsa from "./flag-usa.svg"
+import France from "./flags/france.svg"
+import Germany from "./flags/germany.svg"
+import India from "./flags/india.svg"
+import Indonesia from "./flags/indonesia.svg"
+import Russian from "./flags/russian.svg"
+import Spain from "./flags/spain.svg"
+import Usa from "./flags/usa.svg"
 import GreenFish from "./green-fish.svg"
 import Moon from "./moon.svg"
 import OrangeFish from "./orange-fish.svg"
@@ -28,4 +35,13 @@ export const Icon = {
   FlagUsa,
   SoundOn,
   SoundOff,
+  Flag: {
+    Usa,
+    Russian,
+    Germany,
+    France,
+    Spain,
+    India,
+    Indonesia,
+  },
 }

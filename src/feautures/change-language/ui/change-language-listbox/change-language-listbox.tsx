@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import {
-  Icon,
+  Flag,
   Listbox,
   ListboxButton,
   ListboxOption,
@@ -17,10 +17,10 @@ export const ChangeLanguageListbox = () => {
     <div>
       <Listbox value={i18n.language} onChange={i18n.changeLanguage}>
         <ListboxButton className="w-[100rem] uppercase">
-          {({ value }) => (
+          {({ value: language }) => (
             <div className="flex items-center gap-[8rem]">
-              <Icon.FlagUsa className="h-[16rem]" />
-              <span>{value}</span>
+              <Flag country={language} className="h-[16rem]" />
+              <span>{language}</span>
             </div>
           )}
         </ListboxButton>
@@ -32,7 +32,7 @@ export const ChangeLanguageListbox = () => {
               className="uppercase"
             >
               <div className="flex items-center gap-[8rem]">
-                <Icon.FlagUsa className="h-[16rem]" />
+                <Flag country={language} className="h-[16rem]" />
                 <span>{language}</span>
               </div>
             </ListboxOption>

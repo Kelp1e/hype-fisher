@@ -1,5 +1,5 @@
-.flying-logo {
-  animation: flying 3s steps(5, end) infinite;
+.flyingLogo {
+  animation: flying 2s steps(4, end) infinite;
 }
 
 @keyframes flying {
@@ -7,7 +7,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20rem);
+    transform: translateY(-3rem);
   }
   100% {
     transform: translateY(0);
