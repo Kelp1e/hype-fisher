@@ -36,7 +36,7 @@ export const ToggleMusicCheckbox = () => {
           sound("click")
         }}
         size="4rem"
-        className="group/checkbox size-[30rem] cursor-pointer bg-[#DF7434] p-[4rem] hover:bg-orange"
+        className="group/checkbox relative size-[30rem] cursor-pointer bg-[#DF7434] p-[4rem] hover:bottom-[2rem] hover:bg-orange"
       >
         <div className="flex h-full items-center justify-center bg-orange">
           <SoundIcon className="h-[14rem] text-white" />
