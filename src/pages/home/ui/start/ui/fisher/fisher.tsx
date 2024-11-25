@@ -25,7 +25,7 @@ export const Fisher = (props: FisherProps) => {
           )}
         />
       </div>
-      <div className="absolute inset-x-[125rem] bottom-0">
+      <div className="absolute inset-x-[10%] bottom-0">
         <img
           src="/images/wave.png"
           alt=""

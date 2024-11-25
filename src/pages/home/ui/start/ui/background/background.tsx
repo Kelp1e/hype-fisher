@@ -29,7 +29,7 @@ export const Background = (props: BackgroundProps) => {
       <div className="absolute inset-0">
         <div className="hidden h-full items-end justify-end lg:flex">
           <div
-            className="h-[50%] cursor-pointer xl:h-[85%]"
+            className="h-full max-h-[85%] max-w-[50%] cursor-pointer"
             onClick={onFisherClick}
           >
             <Fisher value={fisher} className="h-full" />
