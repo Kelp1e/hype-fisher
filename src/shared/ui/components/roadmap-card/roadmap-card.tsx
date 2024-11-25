@@ -28,6 +28,7 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
         left: cn({ "bg-[#BEEF6D]": current }),
         content: cn({ "bg-[#18B45C]": current }),
       }}
+      className="h-full"
     >
       <div className="h-full px-[20rem] pb-[20rem] pt-[30rem]">
         <div className="flex h-full flex-col items-center justify-between gap-[35rem] text-center text-white">
