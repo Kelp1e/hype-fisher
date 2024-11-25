@@ -1,9 +1,8 @@
 import React from "react"
 
-import { Fisher } from "~/pages/home/ui/start/ui"
-
 import { cn, sound } from "~/shared/lib"
 
+import { Fisher } from "../fisher"
 import { BackgroundProps } from "./background.props.ts"
 
 export const Background = (props: BackgroundProps) => {
