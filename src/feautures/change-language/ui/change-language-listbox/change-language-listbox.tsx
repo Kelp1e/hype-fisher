@@ -30,7 +30,7 @@ export const ChangeLanguageListbox = () => {
               key={language}
               value={language}
               className="uppercase"
-              disabled={["fr", "es", "id", "hi"].includes(language)}
+              disabled={["es", "id", "hi"].includes(language)}
             >
               <div className="flex items-center gap-[8rem]">
                 <Flag country={language} className="h-[16rem]" />
