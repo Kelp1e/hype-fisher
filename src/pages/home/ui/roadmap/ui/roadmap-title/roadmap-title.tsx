@@ -1,11 +1,14 @@
 import React from "react"
 
 import { motion, useInView } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 import { cn } from "~/shared/lib"
 import { Text } from "~/shared/ui"
 
 export const RoadmapTitle = () => {
+  const { t } = useTranslation()
+
   const ref = React.useRef<HTMLDivElement>(null)
 
   const [isAnimateComplete, setIsAnimateComplete] =
@@ -52,7 +55,7 @@ export const RoadmapTitle = () => {
       >
         Roadmap
       </Text>
-      <p className="text-[16rem] uppercase">Turn your catch into rewards</p>
+      <p className="text-[16rem] uppercase">{t("roadmap.description")}</p>
     </motion.div>
   )
 }

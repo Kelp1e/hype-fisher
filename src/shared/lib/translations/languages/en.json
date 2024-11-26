@@ -1,3 +1,6 @@
 {
-  "startFishing": "start fishing"
+  "startFishing": "Start fishing",
+  "roadmap": {
+    "description": "Turn your catch into rewards"
+  }
 }
