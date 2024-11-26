@@ -82,7 +82,7 @@ export const Button = React.forwardRef<never>(
           >
             <div
               className={cn(
-                "aspect-square h-full w-full bg-white/30",
+                "aspect-square h-full min-h-[50rem] w-full bg-white/30",
                 styles.polygonGlimmer
               )}
             />
