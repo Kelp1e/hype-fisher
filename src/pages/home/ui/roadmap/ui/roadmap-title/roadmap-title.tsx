@@ -46,7 +46,7 @@ export const RoadmapTitle = () => {
     >
       <Text
         as="h1"
-        className="font-kemco text-[24rem] leading-none min-[1024px]:text-[64rem]"
+        className="font-kemco text-[36rem] leading-none min-[1024px]:text-[64rem]"
         classNames={{ shadow: "bottom-[-10%] left-[-2%] text-[#054F86]" }}
         shadow
       >
