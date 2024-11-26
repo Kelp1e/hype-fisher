@@ -19,6 +19,7 @@ import Sun from "./sun.svg"
 import Telegram from "./telegram.svg"
 import Twitter from "./twitter.svg"
 import User from "./user.svg"
+import X from "./x.svg"
 
 export const Icon = {
   Moon,
@@ -30,6 +31,7 @@ export const Icon = {
   Chevron,
   Telegram,
   Twitter,
+  X,
   Checked,
   Shine,
   FlagUsa,

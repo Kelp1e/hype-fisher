@@ -38,7 +38,7 @@ export const Start = () => {
             <img
               src="/images/logo.png"
               alt="hype hisher logo"
-              className="animate-flying-y relative mt-[64rem] block w-full max-w-[333rem] lg:max-w-full"
+              className="relative mt-[64rem] block w-full max-w-[333rem] animate-flying-y lg:max-w-full"
             />
             <StartFishingButton />
           </div>
