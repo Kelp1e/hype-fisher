@@ -92,9 +92,10 @@
     }
   }
 
-	button, a {
-		@apply cursor-pointer
-	}
+  button,
+  a {
+    @apply cursor-pointer;
+  }
 
   body {
     @apply cursor-default bg-sky-950 font-de-pixel-klein text-[16rem] text-white;
