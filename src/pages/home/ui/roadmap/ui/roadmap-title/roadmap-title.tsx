@@ -2,10 +2,14 @@ import React from "react"
 
 import { motion, useInView } from "framer-motion"
 
+import { cn } from "~/shared/lib"
 import { Text } from "~/shared/ui"
 
 export const RoadmapTitle = () => {
   const ref = React.useRef<HTMLDivElement>(null)
+
+  const [isAnimateComplete, setIsAnimateComplete] =
+    React.useState<boolean>(false)
 
   const inView = useInView(ref, {
     once: true,
@@ -30,10 +34,15 @@ export const RoadmapTitle = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-col items-center gap-[20rem] text-center"
+      className={cn("flex flex-col items-center gap-[20rem] text-center", {
+        "animate-flying-y": isAnimateComplete,
+      })}
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
+      onAnimationComplete={() => {
+        setIsAnimateComplete(true)
+      }}
     >
       <Text
         as="h1"
