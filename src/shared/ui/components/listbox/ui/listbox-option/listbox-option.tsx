@@ -2,8 +2,7 @@ import React from "react"
 
 import * as Headless from "@headlessui/react"
 
-import { cn } from "~/shared/lib"
-import { sound } from "~/shared/lib"
+import { cn, sound } from "~/shared/lib"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"
@@ -30,7 +29,7 @@ export const ListboxOption = (props: ListboxOptionProps) => {
       {...rest}
     >
       {(option) => (
-        <div className="flex items-center justify-between gap-[8rem] bg-orange px-[12rem] text-left group-data-[active]/listbox-option:bg-[#E97835]">
+        <div className="flex items-center justify-between gap-[8rem] bg-orange px-[12rem] text-left group-data-[active]/listbox-option:bg-[#E97835] group-data-[disabled]/listbox-option:opacity-50">
           <div>
             {typeof children === "function" ? children(option) : children}
           </div>
