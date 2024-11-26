@@ -9,8 +9,8 @@ export default {
       "de-pixel-klein": ["DePixelKlein", "Kaw"],
     },
     cursor: {
-      default: "url('/icons/cursor-default.svg'), default",
-      pointer: "url('/icons/cursor-pointer.svg'), pointer",
+      default: "url('/images/cursor-default.png'), default",
+      pointer: "url('/images/cursor-pointer.png'), pointer",
     },
     extend: {
       colors: {
