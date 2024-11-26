@@ -5,8 +5,8 @@ export default {
   darkMode: ["class"],
   theme: {
     cursor: {
-      default: "url('/images/cursor-default.png'), default",
-      pointer: "url('/images/cursor-pointer.png'), pointer",
+      default: "url('/icons/cursor-default.svg'), default",
+      pointer: "url('/icons/cursor-pointer.svg'), pointer",
     },
     extend: {
       fontFamily: {
