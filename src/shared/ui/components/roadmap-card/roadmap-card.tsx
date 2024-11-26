@@ -1,7 +1,3 @@
-import React from "react"
-
-import { motion } from "framer-motion"
-
 import { cn } from "~/shared/lib"
 import { Card } from "~/shared/ui"
 
@@ -9,15 +5,6 @@ import { RoadmapCardProps } from "./roadmap-card.props.ts"
 
 export const RoadmapCard = (props: RoadmapCardProps) => {
   const { date, icon, bullets, current = false } = props
-
-  // TODO: Try to remove state
-  const [isBouncing, setIsBouncing] = React.useState<boolean>(false)
-
-  const handleOnIconClick = () => {
-    setIsBouncing(true)
-
-    setTimeout(() => setIsBouncing(false), 200)
-  }
 
   return (
     <Card
@@ -35,22 +22,7 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
           <h1 className="font-kemco text-[16rem] min-[1024px]:text-[28rem]">
             {date}
           </h1>
-          <div onClick={handleOnIconClick} className="relative cursor-pointer">
-            {/*TODO: Make a "steps" animation*/}
-            <motion.div
-              animate={{
-                y: isBouncing ? "-10rem" : 0,
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 200,
-                damping: 15,
-              }}
-              className="inline-block"
-            >
-              {icon}
-            </motion.div>
-          </div>
+          {icon}
           <p className="flex flex-col items-center gap-[20rem] text-center font-de-pixel-klein text-[14rem] min-[1024px]:text-[16rem]">
             {bullets?.map((bullet, index) => <span key={index}>{bullet}</span>)}
           </p>

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { motion, useInView } from "framer-motion"
+import { motion, steps, useInView } from "framer-motion"
 import { useTranslation } from "react-i18next"
 
 import { Icon, RoadmapCard } from "~/shared/ui"
@@ -53,14 +53,39 @@ export const RoadmapContent = () => {
         <RoadmapCard
           current
           date={t("roadmap.cards.0.date")}
-          icon={<Icon.OrangeFish className="h-[20rem] -rotate-45" />}
+          icon={
+            <motion.div
+              animate={{ y: [0, "-4rem", 0] }}
+              transition={{
+                duration: 2,
+                ease: steps(2),
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <Icon.OrangeFish className="h-[20rem] -rotate-45" />
+            </motion.div>
+          }
           bullets={[t("roadmap.cards.0.bullets.0")]}
         />
       </motion.div>
       <motion.div variants={cardVariants}>
         <RoadmapCard
           date={t("roadmap.cards.1.date")}
-          icon={<Icon.GreenFish className="h-[35rem] -rotate-45" />}
+          icon={
+            <motion.div
+              animate={{ y: [0, "-4rem", 0] }}
+              transition={{
+                duration: 2,
+                delay: 0.3,
+                ease: steps(2),
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <Icon.GreenFish className="h-[35rem] -rotate-45" />
+            </motion.div>
+          }
           bullets={[
             t("roadmap.cards.1.bullets.0"),
             t("roadmap.cards.1.bullets.1"),
@@ -70,14 +95,40 @@ export const RoadmapContent = () => {
       <motion.div variants={cardVariants}>
         <RoadmapCard
           date={t("roadmap.cards.2.date")}
-          icon={<Icon.GreenFish className="h-[52.5rem] -rotate-45" />}
+          icon={
+            <motion.div
+              animate={{ y: [0, "-4rem", 0] }}
+              transition={{
+                duration: 2,
+                delay: 0.6,
+                ease: steps(2),
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <Icon.GreenFish className="h-[52.5rem] -rotate-45" />
+            </motion.div>
+          }
           bullets={[t("roadmap.cards.2.bullets.0")]}
         />
       </motion.div>
       <motion.div variants={cardVariants}>
         <RoadmapCard
           date={t("roadmap.cards.3.date")}
-          icon={<Icon.GreenFish className="h-[78.25rem] -rotate-45" />}
+          icon={
+            <motion.div
+              animate={{ y: [0, "-4rem", 0] }}
+              transition={{
+                duration: 2,
+                delay: 1,
+                ease: steps(2),
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <Icon.GreenFish className="h-[78.25rem] -rotate-45" />
+            </motion.div>
+          }
           bullets={[
             t("roadmap.cards.3.bullets.0"),
             t("roadmap.cards.3.bullets.1"),
