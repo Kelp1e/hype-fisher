@@ -1,5 +1,9 @@
 {
   "startFishing": "Start fishing",
+  "news": {
+    "multiplayer": "Live multiplayer",
+    "adventures": "Dive into new adventures"
+  },
   "roadmap": {
     "description": "Turn your catch into rewards",
     "cards": [

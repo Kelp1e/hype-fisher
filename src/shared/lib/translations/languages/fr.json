@@ -1,5 +1,9 @@
 {
   "startFishing": "Commencer à pêcher",
+  "news": {
+    "multiplayer": "Multijoueur en direct",
+    "adventures": "Plongez dans de nouvelles aventures"
+  },
   "roadmap": {
     "description": "Transformez votre prise en récompenses",
     "cards": [

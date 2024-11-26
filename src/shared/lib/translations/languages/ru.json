@@ -1,5 +1,9 @@
 {
   "startFishing": "Начать рыбалку",
+  "news": {
+    "multiplayer": "Мультиплеер",
+    "adventures": "Погрузитесь в новые приключения"
+  },
   "roadmap": {
     "description": "Превратите свой улов в награды",
     "cards": [

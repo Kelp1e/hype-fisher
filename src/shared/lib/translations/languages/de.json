@@ -1,5 +1,9 @@
 {
   "startFishing": "Angeln beginnen",
+  "news": {
+    "multiplayer": "Live-Multiplayer",
+    "adventures": "Tauche in neue Abenteuer ein\""
+  },
   "roadmap": {
     "description": "Verwandle deinen Fang in Belohnungen",
     "cards": [
