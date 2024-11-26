@@ -9,7 +9,7 @@ export const RoadmapContent = () => {
 
   const inView = useInView(ref, {
     once: true,
-    amount: 0.5,
+    amount: 0.3,
   })
 
   const cardsVariants = {
