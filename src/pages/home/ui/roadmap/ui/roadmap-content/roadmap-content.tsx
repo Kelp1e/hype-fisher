@@ -78,8 +78,8 @@ export const RoadmapContent = () => {
           date="2025"
           icon={<Icon.GreenFish className="h-[78.25rem] -rotate-45" />}
           bullets={[
-            "Catch $HYPECOINS through single-player arcade fishing",
-            "Win $HYPECOINS in PVP fishing tournaments",
+            "Catch fish in various game modes and earn $TON",
+            "Enjoy IRL fishing tournament around the world",
           ]}
         />
       </motion.div>
