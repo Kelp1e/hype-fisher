@@ -13,7 +13,7 @@ export const StartFishingButton = (props: StartFishingButtonProps) => {
   return (
     <Button as="a" href={LINK.TELEGRAM_MINI_APP} className={cn("", className)}>
       <div className="flex items-center gap-[4rem]">
-        <Icon.PinkFish className="min-w-[22rem] max-w-[22rem] rotate-[-55deg]" />
+        <Icon.OrangeFish className="min-w-[22rem] max-w-[22rem] mb-[3rem] rotate-[-45deg]" />
         <Text shadow className="whitespace-nowrap text-center">
           {t("startFishing")}
         </Text>
