@@ -80,6 +80,20 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "Mage";
+    src: url("/fonts/mage/mage.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Kaw";
+    src: url("/fonts/kaw/kaw.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
   *:focus {
     outline: none;
   }

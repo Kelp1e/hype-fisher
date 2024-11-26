@@ -8,7 +8,7 @@ import { Corners, Icon } from "~/shared/ui"
 import { ListboxOptionProps } from "./listbox-option.props.ts"
 
 export const ListboxOption = (props: ListboxOptionProps) => {
-  const { onClick, className, children, ...rest } = props
+  const { onClick, className, disabled, children, ...rest } = props
 
   return (
     <Headless.ListboxOption
@@ -23,12 +23,15 @@ export const ListboxOption = (props: ListboxOptionProps) => {
         onClick?.()
       }}
       onMouseEnter={() => {
-        sound("hover")
+        if (!disabled) {
+          sound("hover")
+        }
       }}
       className={cn(
         "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
         className
       )}
+      disabled={disabled}
       {...rest}
     >
       {(option) => (

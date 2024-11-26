@@ -4,15 +4,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   theme: {
+    fontFamily: {
+      kemco: ["Kemco Pixel", "Mage"],
+      "de-pixel-klein": ["DePixelKlein", "Kaw"],
+    },
     cursor: {
       default: "url('/icons/cursor-default.svg'), default",
       pointer: "url('/icons/cursor-pointer.svg'), pointer",
     },
     extend: {
-      fontFamily: {
-        kemco: ["Kemco Pixel", "sans-serif"],
-        "de-pixel-klein": ["DePixelKlein", "sans-serif"],
-      },
       colors: {
         yellow: {
           DEFAULT: "#FBE92D",
