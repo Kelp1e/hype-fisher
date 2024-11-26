@@ -1,10 +1,13 @@
 import React from "react"
 
 import { motion, useInView } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 import { Icon, RoadmapCard } from "~/shared/ui"
 
 export const RoadmapContent = () => {
+  const { t } = useTranslation()
+
   const ref = React.useRef<HTMLDivElement>(null)
 
   const inView = useInView(ref, {
@@ -49,37 +52,35 @@ export const RoadmapContent = () => {
       <motion.div variants={cardVariants}>
         <RoadmapCard
           current
-          date="OCTOBER 24"
+          date={t("roadmap.cards.0.date")}
           icon={<Icon.OrangeFish className="h-[20rem] -rotate-45" />}
-          bullets={["Catch $HYPECOINS in single-player arcade fishing"]}
+          bullets={[t("roadmap.cards.0.bullets.0")]}
         />
       </motion.div>
       <motion.div variants={cardVariants}>
         <RoadmapCard
-          date="Now-dec 24"
+          date={t("roadmap.cards.1.date")}
           icon={<Icon.GreenFish className="h-[35rem] -rotate-45" />}
           bullets={[
-            "Catch $HYPECOINS through single-player arcade fishing",
-            "Win $HYPECOINS in PVP fishing tournaments",
+            t("roadmap.cards.1.bullets.0"),
+            t("roadmap.cards.1.bullets.1"),
           ]}
         />
       </motion.div>
       <motion.div variants={cardVariants}>
         <RoadmapCard
-          date="Jan 25"
+          date={t("roadmap.cards.2.date")}
           icon={<Icon.GreenFish className="h-[52.5rem] -rotate-45" />}
-          bullets={[
-            "Get valuable $AIRDROP based on your $HYPECOIN amount and use it in the GAME",
-          ]}
+          bullets={[t("roadmap.cards.2.bullets.0")]}
         />
       </motion.div>
       <motion.div variants={cardVariants}>
         <RoadmapCard
-          date="2025"
+          date={t("roadmap.cards.3.date")}
           icon={<Icon.GreenFish className="h-[78.25rem] -rotate-45" />}
           bullets={[
-            "Catch fish in various game modes and earn $TON",
-            "Enjoy IRL fishing tournament around the world",
+            t("roadmap.cards.3.bullets.0"),
+            t("roadmap.cards.3.bullets.1"),
           ]}
         />
       </motion.div>

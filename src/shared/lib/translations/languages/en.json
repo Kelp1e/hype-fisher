@@ -1,6 +1,32 @@
 {
   "startFishing": "Start fishing",
   "roadmap": {
-    "description": "Turn your catch into rewards"
+    "description": "Turn your catch into rewards",
+    "cards": [
+      {
+        "date": "October 24",
+        "bullets": ["Catch $HYPECOINS in single-player arcade fishing"]
+      },
+      {
+        "date": "Now-dec 24",
+        "bullets": [
+          "Catch $HYPECOINS through single-player arcade fishing",
+          "Win $HYPECOINS in PVP fishing tournaments"
+        ]
+      },
+      {
+        "date": "Jan 25",
+        "bullets": [
+          "Get valuable $AIRDROP based on your $HYPECOIN amount and use it in the GAME"
+        ]
+      },
+      {
+        "date": "2025",
+        "bullets": [
+          "Catch fish in various game modes and earn $TON",
+          "Enjoy IRL fishing tournament around the world"
+        ]
+      }
+    ]
   }
 }
