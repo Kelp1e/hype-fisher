@@ -22,6 +22,9 @@ export const ListboxOption = (props: ListboxOptionProps) => {
         sound("click")
         onClick?.()
       }}
+      onMouseEnter={() => {
+        sound("hover")
+      }}
       className={cn(
         "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
         className
