@@ -89,7 +89,7 @@
 
   @font-face {
     font-family: "Kaw";
-    src: url("/fonts/kaw/kaw.ttf") format("truetype");
+    src: url("/fonts/basis/basis.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
