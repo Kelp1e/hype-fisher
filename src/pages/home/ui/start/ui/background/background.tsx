@@ -1,6 +1,6 @@
 import React from "react"
 
-import { cn, sound } from "~/shared/lib"
+import { cn, sound, useLocalStorage } from "~/shared/lib"
 
 import { Fisher } from "../fisher"
 import { BackgroundProps } from "./background.props.ts"
@@ -8,8 +8,9 @@ import { BackgroundProps } from "./background.props.ts"
 export const Background = (props: BackgroundProps) => {
   const { className, children } = props
 
-  const [fisher, setFisher] =
-    React.useState<React.ComponentProps<typeof Fisher>["value"]>("boy")
+  const [fisher, setFisher] = useLocalStorage<
+    React.ComponentProps<typeof Fisher>["value"]
+  >("fisher", "boy")
 
   const onFisherClick = () => {
     setFisher((prev) =>
