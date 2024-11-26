@@ -19,7 +19,7 @@ export const RoadmapTitle = () => {
   const variants = {
     hidden: {
       opacity: 0,
-      y: -50,
+      y: "-50rem",
     },
     visible: {
       opacity: 1,
