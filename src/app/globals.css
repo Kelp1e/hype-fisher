@@ -92,8 +92,12 @@
     }
   }
 
+	button, a {
+		@apply cursor-pointer
+	}
+
   body {
-    @apply bg-sky-950 font-de-pixel-klein text-[16rem] text-white;
+    @apply cursor-default bg-sky-950 font-de-pixel-klein text-[16rem] text-white;
   }
 
   img {

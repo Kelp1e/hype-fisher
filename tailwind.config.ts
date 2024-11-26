@@ -4,6 +4,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   theme: {
+    cursor: {
+      default: "url('/images/cursor-default.png'), default",
+      pointer: "url('/images/cursor-pointer.png'), pointer",
+    },
     extend: {
       fontFamily: {
         kemco: ["Kemco Pixel", "sans-serif"],
