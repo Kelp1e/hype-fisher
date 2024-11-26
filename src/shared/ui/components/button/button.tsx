@@ -17,6 +17,7 @@ export const Button = React.forwardRef<never>(
       className,
       classNames,
       onClick,
+      onMouseEnter,
       children,
       ...rest
     } = props
@@ -28,6 +29,9 @@ export const Button = React.forwardRef<never>(
         onClick={() => {
           sound("click")
           onClick?.()
+        }}
+        onMouseEnter={() => {
+          onMouseEnter?.()
         }}
         className={cn(
           "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[2rem]",
