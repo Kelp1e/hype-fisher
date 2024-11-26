@@ -15,7 +15,7 @@ export const ChangeLanguageListbox = () => {
 
   return (
     <div>
-      <Listbox value={i18n.language} onChange={i18n.changeLanguage}>
+      <Listbox value={i18n.resolvedLanguage} onChange={i18n.changeLanguage}>
         <ListboxButton className="w-[100rem] uppercase">
           {({ value: language }) => (
             <div className="flex items-center gap-[8rem]">
