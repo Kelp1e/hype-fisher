@@ -15,67 +15,12 @@
   }
 
   @font-face {
-    font-family: "DePixelBreit";
-    src:
-      url("/fonts/de-pixel/depixelbreit.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelbreit.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelBreit.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelBreit.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "DePixelBreitFett";
-    src:
-      url("/fonts/de-pixel/depixelbreitfett.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelbreitfett.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelBreitFett.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelBreitFett.otf") format("opentype");
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "DePixelHalbfett";
-    src:
-      url("/fonts/de-pixel/depixelhalbfett.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelhalbfett.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelHalbfett.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelHalbfett.otf") format("opentype");
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "DePixelIllegible";
-    src:
-      url("/fonts/de-pixel/depixelillegible.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelillegible.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelIllegible.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelIllegible.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
     font-family: "DePixelKlein";
     src:
-      url("/fonts/de-pixel/depixelklein.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelklein.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelKlein.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelKlein.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "DePixelSchmal";
-    src:
-      url("/fonts/de-pixel/depixelschmal.woff2") format("woff2"),
-      url("/fonts/de-pixel/depixelschmal.woff") format("woff"),
-      url("/fonts/de-pixel/DePixelSchmal.ttf") format("truetype"),
-      url("/fonts/de-pixel/DePixelSchmal.otf") format("opentype");
+      url("/fonts/de-pixel/de-pixel-klein.woff2") format("woff2"),
+      url("/fonts/de-pixel/de-pixel-klein.woff") format("woff"),
+      url("/fonts/de-pixel/de-pixel-klein.ttf") format("truetype"),
+      url("/fonts/de-pixel/de-pixel-klein.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
