@@ -1,12 +1,8 @@
+import * as Headless from "@headlessui/react"
 import { useTranslation } from "react-i18next"
 
-import {
-  Flag,
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from "~/shared/ui"
+import { sound } from "~/shared/lib"
+import { Flag, Listbox, ListboxOption, ListboxOptions } from "~/shared/ui"
 
 export const ChangeLanguageListbox = () => {
   const { i18n } = useTranslation()
@@ -15,16 +11,25 @@ export const ChangeLanguageListbox = () => {
 
   return (
     <div>
-      <Listbox value={i18n.resolvedLanguage} onChange={i18n.changeLanguage}>
-        <ListboxButton className="w-[100rem] uppercase">
+      <Listbox
+        className="flex items-center"
+        value={i18n.resolvedLanguage}
+        onChange={i18n.changeLanguage}
+      >
+        <Headless.ListboxButton
+          className="size-[30rem]"
+          onClick={() => {
+            sound("click")
+          }}
+        >
           {({ value: language }) => (
-            <div className="flex items-center gap-[8rem]">
-              <Flag country={language} className="h-[16rem]" />
-              <span>{language}</span>
-            </div>
+            <Flag country={language} className="h-full" />
           )}
-        </ListboxButton>
-        <ListboxOptions>
+        </Headless.ListboxButton>
+        <ListboxOptions
+          anchor="bottom start"
+          className="w-[100rem] [--anchor-gap:10rem]"
+        >
           {languages?.map((language) => (
             <ListboxOption
               key={language}
