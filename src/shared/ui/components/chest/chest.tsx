@@ -46,6 +46,7 @@ export const Chest = (props: ChestProps) => {
   return (
     <button
       onClick={() => {
+        sound("click")
         sound("openChest")
         setPlayed(true)
       }}
