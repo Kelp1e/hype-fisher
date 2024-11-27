@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 
+import { motion } from "framer-motion"
+
 import { cn, sound } from "~/shared/lib"
 import { Icon } from "~/shared/ui"
 
@@ -44,25 +46,58 @@ export const Chest = (props: ChestProps) => {
   }, [played, setPlayed, fps, images.length])
 
   return (
-    <button
-      onClick={() => {
-        sound("click")
-        sound("openChest")
-        setPlayed(true)
-      }}
-      disabled={played}
-      className={cn("relative", styles.button)}
-    >
-      <img src={images[frame]} alt={`Chest`} className={cn("", className)} />
-      <div className="absolute inset-0">
-        <div className="h-[35%]">
-          <Icon.Shine
-            className={cn("h-full text-white", styles.shine, {
-              hidden: played,
-            })}
-          />
+    <div className="relative">
+      <button
+        onClick={() => {
+          sound("click")
+          sound("openChest")
+          setPlayed(true)
+        }}
+        disabled={played}
+        className={cn("relative z-[2]", styles.button)}
+      >
+        <img src={images[frame]} alt={`Chest`} className={cn("", className)} />
+        <div className="absolute inset-0">
+          <div className="h-[35%]">
+            <Icon.Shine
+              className={cn("h-full text-white", styles.shine, {
+                hidden: played,
+              })}
+            />
+          </div>
         </div>
-      </div>
-    </button>
+      </button>
+      <button
+        onClick={() => {
+          sound("coin")
+        }}
+        className="absolute inset-0 z-[1] flex items-end"
+      >
+        <motion.div
+          className="relative ml-[25%] block h-[30%]"
+          animate={frame > 6 ? "open" : "closed"}
+          initial={{ opacity: 0 }}
+          variants={{
+            closed: {
+              opacity: 0,
+              bottom: "0%",
+            },
+            open: {
+              opacity: 1,
+              bottom: "100%",
+              transition: {
+                type: "spring",
+              },
+            },
+          }}
+        >
+          <img
+            src="/images/hypecoin.png"
+            alt="hypecoin"
+            className="h-full animate-flying-y"
+          />
+        </motion.div>
+      </button>
+    </div>
   )
 }

@@ -56,6 +56,10 @@
     @apply cursor-pointer;
   }
 
+  button:disabled {
+    @apply cursor-default;
+  }
+
   body {
     @apply cursor-default bg-sky-950 font-de-pixel-klein text-[16rem] text-white;
   }
