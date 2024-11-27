@@ -23,6 +23,7 @@ export const Chest = (props: ChestProps) => {
     "/images/chest/7.png",
     "/images/chest/8.png",
     "/images/chest/9.png",
+    "/images/chest/10.png",
   ]
 
   useEffect(() => {
