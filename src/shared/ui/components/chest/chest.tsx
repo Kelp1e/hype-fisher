@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react"
 
-import { motion } from "framer-motion"
-
 import { cn, sound } from "~/shared/lib"
 import { Icon } from "~/shared/ui"
 
@@ -67,37 +65,37 @@ export const Chest = (props: ChestProps) => {
           </div>
         </div>
       </button>
-      <button
-        onClick={() => {
-          sound("coin")
-        }}
-        className="absolute inset-0 z-[1] flex items-end"
-      >
-        <motion.div
-          className="relative ml-[25%] block h-[30%]"
-          animate={frame > 6 ? "open" : "closed"}
-          initial={{ opacity: 0 }}
-          variants={{
-            closed: {
-              opacity: 0,
-              bottom: "0%",
-            },
-            open: {
-              opacity: 1,
-              bottom: "100%",
-              transition: {
-                type: "spring",
-              },
-            },
-          }}
-        >
-          <img
-            src="/images/hypecoin.png"
-            alt="hypecoin"
-            className="h-full animate-flying-y"
-          />
-        </motion.div>
-      </button>
+      {/*<button*/}
+      {/*  onClick={() => {*/}
+      {/*    sound("coin")*/}
+      {/*  }}*/}
+      {/*  className="absolute inset-0 z-[1] flex items-end"*/}
+      {/*>*/}
+      {/*  <motion.div*/}
+      {/*    className="relative ml-[25%] block h-[30%]"*/}
+      {/*    animate={frame > 6 ? "open" : "closed"}*/}
+      {/*    initial={{ opacity: 0 }}*/}
+      {/*    variants={{*/}
+      {/*      closed: {*/}
+      {/*        opacity: 0,*/}
+      {/*        bottom: "0%",*/}
+      {/*      },*/}
+      {/*      open: {*/}
+      {/*        opacity: 1,*/}
+      {/*        bottom: "100%",*/}
+      {/*        transition: {*/}
+      {/*          type: "spring",*/}
+      {/*        },*/}
+      {/*      },*/}
+      {/*    }}*/}
+      {/*  >*/}
+      {/*    <img*/}
+      {/*      src="/images/hypecoin.png"*/}
+      {/*      alt="hypecoin"*/}
+      {/*      className="h-full animate-flying-y"*/}
+      {/*    />*/}
+      {/*  </motion.div>*/}
+      {/*</button>*/}
     </div>
   )
 }
