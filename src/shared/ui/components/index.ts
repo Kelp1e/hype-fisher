@@ -8,6 +8,7 @@ export { Corners } from "./corners"
 export { Scene } from "./scene"
 export { Flag } from "./flag"
 export { Plane } from "./plane"
+export { Chest } from "./chest"
 export {
   Listbox,
   ListboxButton,

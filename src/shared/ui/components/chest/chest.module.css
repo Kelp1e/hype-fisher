@@ -1,0 +1,34 @@
+.shine {
+	animation: shine-repeat 8s infinite steps(2);
+}
+
+@keyframes shine-repeat {
+	0% {
+		transform: scale(0%);
+	}
+	5% {
+		transform: scale(100%);
+	}
+	10% {
+		transform: scale(0%);
+	}
+	100% {
+		transform: scale(0%);
+	}
+}
+
+.button:hover .shine {
+	animation: shine-hover 0.5s forwards steps(2);
+}
+
+@keyframes shine-hover {
+	0% {
+		transform: scale(0%);
+	}
+	50% {
+		transform: scale(100%);
+	}
+	100% {
+		transform: scale(0%);
+	}
+}
