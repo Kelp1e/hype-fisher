@@ -20,14 +20,14 @@ export const Start = () => {
             <a
               href={LINK.TWITTER}
               target="_blank"
-              className="relative hover:bottom-[1rem]"
+              className="relative hover:bottom-[1rem] pointer-coarse:hover:bottom-0"
             >
               <Icon.Twitter className="h-[24rem]" />
             </a>
             <a
               href={LINK.TELEGRAM}
               target="_blank"
-              className="relative hover:bottom-[1rem]"
+              className="relative hover:bottom-[1rem] pointer-coarse:hover:bottom-0"
             >
               <Icon.Telegram className="h-[24rem]" />
             </a>

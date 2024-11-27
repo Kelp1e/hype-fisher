@@ -1,4 +1,5 @@
 import { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -47,5 +48,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("pointer-coarse", "@media (pointer: coarse)")
+      addVariant("pointer-fine", "@media (pointer: fine)")
+      addVariant("pointer-none", "@media (pointer: none)")
+    }),
+  ],
 } as Config
