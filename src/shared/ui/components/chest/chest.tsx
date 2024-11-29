@@ -67,6 +67,26 @@ export const Chest = (props: ChestProps) => {
             />
           </div>
         </div>
+        <motion.div className="absolute inset-0 z-[2] flex items-center">
+          <motion.div className="left-1/2 translate-x-[calc(-50%+125rem)] font-kemco text-[24rem]">
+            <motion.div
+              animate={played ? "played" : "stop"}
+              variants={{
+                played: {
+                  opacity: 0,
+                  transition: {
+                    duration: 0.1,
+                  },
+                },
+                stop: {
+                  opacity: 1,
+                },
+              }}
+            >
+              <div className="mt-[10rem] animate-ping">open</div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </button>
       <motion.div
         className="absolute left-1/2 -translate-x-1/2"
