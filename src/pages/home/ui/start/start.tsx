@@ -1,9 +1,10 @@
-import { ChangeLanguageListbox } from "~/feautures/change-language/ui"
-import { StartFishingButton } from "~/feautures/start-fishing/ui"
-import { ToggleMusicCheckbox } from "~/feautures/toggle-music/ui"
-
 import { LINK } from "~/shared/lib"
-import { Icon } from "~/shared/ui"
+import {
+  ChangeLanguageListbox,
+  Icon,
+  StartFishingButton,
+  ToggleMusicCheckbox,
+} from "~/shared/ui"
 
 import { Background } from "./ui"
 
@@ -44,6 +45,7 @@ export const Start = () => {
           </div>
         </div>
       </div>
+
     </Background>
   )
 }
