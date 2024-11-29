@@ -20,14 +20,14 @@ export const Start = () => {
             <a
               href={LINK.TWITTER}
               target="_blank"
-              className="pointer-coarse:hover:bottom-0 relative hover:bottom-[1rem]"
+              className="relative hover:bottom-[1rem] pointer-coarse:hover:bottom-0"
             >
               <Icon.Twitter className="h-[24rem]" />
             </a>
             <a
               href={LINK.TELEGRAM}
               target="_blank"
-              className="pointer-coarse:hover:bottom-0 relative hover:bottom-[1rem]"
+              className="relative hover:bottom-[1rem] pointer-coarse:hover:bottom-0"
             >
               <Icon.Telegram className="h-[24rem]" />
             </a>
@@ -40,7 +40,7 @@ export const Start = () => {
               alt="hype hisher logo"
               className="relative mt-[64rem] block w-full max-w-[333rem] animate-flying-y lg:max-w-full"
             />
-            <StartFishingButton />
+            <StartFishingButton className="mb-[50rem] lg:mb-0" />
           </div>
         </div>
       </div>
