@@ -60,7 +60,15 @@ export const Chest = (props: ChestProps) => {
         disabled={played}
         className={cn("relative z-[2]", styles.button)}
       >
-        <img src={images[frame]} alt={`Chest`} className={cn("", className)} />
+        <img
+          src={images[frame]}
+          alt={`Chest`}
+          className={cn("", className)}
+          style={{
+            filter:
+              "drop-shadow(1rem 1rem 0 white) drop-shadow(-1rem 1rem 0 white) drop-shadow(1rem -1rem 0 white) drop-shadow(-1rem -1rem 0 white)",
+          }}
+        />
         <div className="absolute inset-0">
           <div className="h-[35%]">
             <Icon.Shine
