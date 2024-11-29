@@ -28,7 +28,7 @@ export const ListboxOption = (props: ListboxOptionProps) => {
         }
       }}
       className={cn(
-        "group/listbox-option mt-[-4rem] bg-[#E97835] p-[4rem] first:mt-0",
+        "group/listbox-option mt-[-4rem] data-[disabled]:cursor-default bg-[#E97835] p-[4rem] first:mt-0",
         className
       )}
       disabled={disabled}
