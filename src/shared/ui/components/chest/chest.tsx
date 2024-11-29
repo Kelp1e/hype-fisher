@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react"
 
+import { motion } from "framer-motion"
+
 import { cn, sound } from "~/shared/lib"
-import { Icon } from "~/shared/ui"
+import { Icon, StartFishingButton } from "~/shared/ui"
 
 import { ChestProps } from "./chest.props.ts"
 
@@ -66,6 +68,31 @@ export const Chest = (props: ChestProps) => {
           </div>
         </div>
       </button>
+      <motion.div
+        className="absolute left-1/2 -translate-x-1/2"
+        animate={frame > 5 ? "open" : "closed"}
+        initial={{
+          bottom: 0,
+          opacity: 0,
+        }}
+        variants={{
+          open: {
+            bottom: "100%",
+            opacity: 1,
+            transition: {
+              type: "spring",
+            },
+          },
+          closed: {
+            opacity: 0,
+            bottom: 0,
+          },
+        }}
+      >
+        <div className="animate-flying-y">
+          <StartFishingButton className="hover:bottom-0" />
+        </div>
+      </motion.div>
     </div>
   )
 }

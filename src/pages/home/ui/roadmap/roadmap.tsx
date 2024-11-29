@@ -12,7 +12,7 @@ export const Roadmap = () => {
         <RoadmapTitle />
         <RoadmapContent />
       </div>
-      <div className="max-container mx-auto flex items-end justify-end">
+      <div className="max-container mx-auto flex items-end justify-center">
         <Chest className="h-[200rem]" />
       </div>
     </Scene>
