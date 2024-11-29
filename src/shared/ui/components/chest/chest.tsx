@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 import { cn, sound } from "~/shared/lib"
 import { Icon, StartFishingButton } from "~/shared/ui"
@@ -11,6 +12,8 @@ import styles from "./chest.module.css"
 
 export const Chest = (props: ChestProps) => {
   const { fps = 100, className } = props
+
+  const { t } = useTranslation()
 
   const [played, setPlayed] = React.useState<boolean>(false)
   const [frame, setFrame] = useState<number>(0)
@@ -83,7 +86,7 @@ export const Chest = (props: ChestProps) => {
                 },
               }}
             >
-              <div className="mt-[10rem] animate-ping">open</div>
+              <div className="mt-[10rem] animate-ping">{t("open")}</div>
             </motion.div>
           </motion.div>
         </motion.div>
