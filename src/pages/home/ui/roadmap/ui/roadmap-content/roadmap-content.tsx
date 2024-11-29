@@ -44,7 +44,7 @@ export const RoadmapContent = () => {
   return (
     <motion.div
       ref={ref}
-      className="mx-auto grid max-w-[520rem] grid-cols-2 gap-[20rem] min-[768px]:max-w-full min-[768px]:grid-cols-4"
+      className="mx-auto grid max-w-[520rem] grid-cols-2 gap-[20rem] md:max-w-full md:grid-cols-4"
       variants={cardsVariants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
