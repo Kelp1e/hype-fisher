@@ -2,13 +2,15 @@ import React from "react"
 
 import * as Headless from "@headlessui/react"
 
-import { cn, sound } from "~/shared/lib"
+import { cn, useSoundContext } from "~/shared/lib"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxOptionProps } from "./listbox-option.props.ts"
 
 export const ListboxOption = (props: ListboxOptionProps) => {
   const { onClick, className, disabled, children, ...rest } = props
+
+  const sound = useSoundContext()
 
   return (
     <Headless.ListboxOption
@@ -19,12 +21,12 @@ export const ListboxOption = (props: ListboxOptionProps) => {
         <Corners as="button" size="4rem" ref={ref} {...asProps} />
       ))}
       onClick={() => {
-        sound("click")
+        sound?.play("click")
         onClick?.()
       }}
       onMouseEnter={() => {
         if (!disabled) {
-          sound("hover")
+          sound?.play("hover")
         }
       }}
       className={cn(

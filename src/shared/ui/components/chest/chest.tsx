@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
 
-import { cn, sound } from "~/shared/lib"
+import { cn, useSoundContext } from "~/shared/lib"
 import { Icon, StartFishingButton } from "~/shared/ui"
 
 import { ChestProps } from "./chest.props.ts"
@@ -14,6 +14,8 @@ export const Chest = (props: ChestProps) => {
   const { fps = 100, className } = props
 
   const { t } = useTranslation()
+
+  const sound = useSoundContext()
 
   const [played, setPlayed] = React.useState<boolean>(false)
   const [frame, setFrame] = useState<number>(0)
@@ -53,23 +55,44 @@ export const Chest = (props: ChestProps) => {
     <div className="relative">
       <button
         onClick={() => {
-          sound("click")
-          sound("openChest")
+          sound?.play("click")
+          sound?.play("openChest")
           setPlayed(true)
         }}
         disabled={played}
         className={cn("relative z-[2]", styles.button)}
       >
-        <img
-          src={images[frame]}
-          alt={`Chest`}
-          className={cn("", className)}
-          style={{
-            filter:
-              "drop-shadow(1rem 1rem 0 white) drop-shadow(-1rem 1rem 0 white) drop-shadow(1rem -1rem 0 white) drop-shadow(-1rem -1rem 0 white)",
-          }}
-        />
-        <div className="absolute inset-0">
+        <div className="relative w-fit">
+          <img
+            src={images[frame]}
+            alt={`Chest`}
+            className={cn("relative z-[1]", className)}
+          />
+          <motion.div
+            className="absolute inset-0 z-[0]"
+            initial={{
+              filter: "blur(0rem)",
+            }}
+            animate={{
+              filter: ["blur(0rem)", "blur(1rem)"],
+            }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          >
+            <img
+              src={images[frame]}
+              alt={`Chest`}
+              style={{
+                filter:
+                  "drop-shadow(5rem 5rem 0 white) drop-shadow(-5rem 5rem 0 white) drop-shadow(5rem -5rem 0 white) drop-shadow(-5rem -5rem 0 white)",
+              }}
+            />
+          </motion.div>
+        </div>
+        <div className="absolute inset-0 z-[3]">
           <div className="h-[35%]">
             <Icon.Shine
               className={cn("h-full text-white", styles.shine, {

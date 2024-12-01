@@ -1,6 +1,6 @@
 import React from "react"
 
-import { cn, sound } from "~/shared/lib"
+import { cn, useSoundContext } from "~/shared/lib"
 import { Icon, PolyRef, PolyRefComponent, PolyRefProps } from "~/shared/ui"
 
 import { ButtonProps } from "./button.props.ts"
@@ -22,19 +22,21 @@ export const Button = React.forwardRef<never>(
       ...rest
     } = props
 
+    const sound = useSoundContext()
+
     return (
       <Component
         ref={ref}
         {...rest}
         onClick={() => {
-          sound("click")
+          sound?.play("click")
           onClick?.()
         }}
         onMouseEnter={() => {
           onMouseEnter?.()
         }}
         className={cn(
-          "group/button relative min-h-[50rem] font-kemco pointer-coarse:hover:bottom-0 text-white hover:bottom-[2rem]",
+          "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[2rem] pointer-coarse:hover:bottom-0",
           styles.button,
           className
         )}

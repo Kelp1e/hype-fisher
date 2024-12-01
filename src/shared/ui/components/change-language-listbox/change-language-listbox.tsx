@@ -1,11 +1,13 @@
 import * as Headless from "@headlessui/react"
 import { useTranslation } from "react-i18next"
 
-import { sound } from "~/shared/lib"
+import { useSoundContext } from "~/shared/lib"
 import { Flag, Listbox, ListboxOption, ListboxOptions } from "~/shared/ui"
 
 export const ChangeLanguageListbox = () => {
   const { i18n } = useTranslation()
+
+  const sound = useSoundContext()
 
   const languages = Object.keys(i18n.options.resources || {})
 
@@ -19,7 +21,7 @@ export const ChangeLanguageListbox = () => {
         <Headless.ListboxButton
           className="size-[30rem]"
           onClick={() => {
-            sound("click")
+            sound?.play("click")
           }}
         >
           {({ value: language }) => (

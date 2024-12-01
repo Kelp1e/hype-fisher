@@ -1,12 +1,14 @@
 import React from "react"
 
-import { cn, sound, useLocalStorage } from "~/shared/lib"
+import { cn, useLocalStorage, useSoundContext } from "~/shared/lib"
 
 import { Fisher } from "../fisher"
 import { BackgroundProps } from "./background.props.ts"
 
 export const Background = (props: BackgroundProps) => {
   const { className, children } = props
+
+  const sound = useSoundContext()
 
   const [fisher, setFisher] = useLocalStorage<
     React.ComponentProps<typeof Fisher>["value"]
@@ -17,7 +19,7 @@ export const Background = (props: BackgroundProps) => {
       prev === "boy" ? "girl" : prev === "girl" ? "old" : "boy"
     )
 
-    sound("click")
+    sound?.play("click")
   }
 
   return (

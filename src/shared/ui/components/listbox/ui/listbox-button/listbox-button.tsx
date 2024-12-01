@@ -2,14 +2,15 @@ import React from "react"
 
 import * as Headless from "@headlessui/react"
 
-import { cn } from "~/shared/lib"
-import { sound } from "~/shared/lib"
+import { cn, useSoundContext } from "~/shared/lib"
 import { Corners, Icon } from "~/shared/ui"
 
 import { ListboxButtonProps } from "./listbox-button.props.ts"
 
 export const ListboxButton = (props: ListboxButtonProps) => {
   const { onClick, className, children, ...rest } = props
+
+  const sound = useSoundContext()
 
   return (
     <Headless.ListboxButton
@@ -20,7 +21,7 @@ export const ListboxButton = (props: ListboxButtonProps) => {
         <Corners as="button" size="4rem" ref={ref} {...asProps} />
       ))}
       onClick={() => {
-        sound("click")
+        sound?.play("click")
         onClick?.()
       }}
       className={cn(
