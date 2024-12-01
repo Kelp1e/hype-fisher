@@ -68,26 +68,13 @@ export const Chest = (props: ChestProps) => {
             alt={`Chest`}
             className={cn("relative z-[1]", className)}
           />
-          <motion.div
-            className="absolute inset-0 z-[0]"
-            initial={{
-              filter: "blur(0rem)",
-            }}
-            animate={{
-              filter: ["blur(0rem)", "blur(1rem)"],
-            }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          >
+          <motion.div className="absolute inset-0 z-[0]">
             <img
               src={images[frame]}
               alt={`Chest`}
               style={{
                 filter:
-                  "drop-shadow(5rem 5rem 0 white) drop-shadow(-5rem 5rem 0 white) drop-shadow(5rem -5rem 0 white) drop-shadow(-5rem -5rem 0 white)",
+                  "drop-shadow(2rem 2rem 0 white) drop-shadow(-2rem 2rem 0 white) drop-shadow(2rem -2rem 0 white) drop-shadow(-2rem -2rem 0 white)",
               }}
             />
           </motion.div>
