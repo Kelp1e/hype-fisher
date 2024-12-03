@@ -50,6 +50,25 @@ export const Background = (props: BackgroundProps) => {
             className="h-full w-full object-contain object-left-bottom"
           />
         </motion.div>
+
+        <motion.div
+          initial={{
+            x: "100%",
+            y: "-175%",
+          }}
+          animate={{
+            x: "14%",
+            y: "-175%",
+            transition: { type: "spring", duration: 1, delay: 0.5 },
+          }}
+          className="absolute bottom-0 right-0 h-[35%] w-fit max-w-[500rem]"
+        >
+          <img
+            src="/gifs/yellow-boat.gif"
+            alt="yellow boat"
+            className="h-full w-full -scale-x-100 object-contain object-left-bottom"
+          />
+        </motion.div>
       </div>
       <div className="absolute inset-0">
         <div className="hidden h-full items-end justify-end lg:flex">
