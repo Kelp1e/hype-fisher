@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 import { LINK } from "~/shared/lib"
 import {
   ChangeLanguageListbox,
@@ -36,16 +38,35 @@ export const Start = () => {
         </header>
         <div className="relative flex flex-1 lg:top-[-10%] lg:w-1/3 lg:items-center">
           <div className="flex w-full flex-1 flex-col items-center justify-between gap-[40rem] lg:justify-start">
-            <img
-              src="/images/logo.png"
-              alt="hype hisher logo"
-              className="relative mt-[64rem] block w-full max-w-[333rem] animate-flying-y lg:max-w-full"
-            />
-            <StartFishingButton className="mb-[50rem] lg:mb-0" />
+            <motion.div
+              initial={{ opacity: 0, y: "-50rem" }}
+              animate={{ opacity: 1, y: 0, transition: { type: "spring" } }}
+              transition={{ duration: 0.5, delay: 0 }}
+              className="mt-[64rem] max-w-[333rem] lg:max-w-full"
+            >
+              <img
+                src="/images/logo.png"
+                alt="hype hisher logo"
+                className="relative block w-full animate-flying-y"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: "20rem" }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  delay: 0.3,
+                },
+              }}
+              className="mb-[50rem] lg:mb-0"
+            >
+              <StartFishingButton />
+            </motion.div>
           </div>
         </div>
       </div>
-
     </Background>
   )
 }
