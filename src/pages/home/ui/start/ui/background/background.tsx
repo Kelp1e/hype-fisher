@@ -90,7 +90,7 @@ export const Background = (props: BackgroundProps) => {
           initial={{
             x: "100%",
             y: "-150%",
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
             x: "0%",
