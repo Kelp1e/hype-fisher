@@ -50,7 +50,6 @@ export const Background = (props: BackgroundProps) => {
             className="h-full w-full object-contain object-left-bottom"
           />
         </motion.div>
-
         <motion.div
           initial={{
             x: "100%",
@@ -69,6 +68,9 @@ export const Background = (props: BackgroundProps) => {
             className="h-full w-full -scale-x-100 object-contain object-left-bottom"
           />
         </motion.div>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 top-1/2 lg:block hidden">
+
       </div>
       <div className="absolute inset-0">
         <div className="hidden h-full items-end justify-end lg:flex">
