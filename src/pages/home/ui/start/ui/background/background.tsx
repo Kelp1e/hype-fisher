@@ -29,6 +29,15 @@ export const Background = (props: BackgroundProps) => {
         className
       )}
     >
+      <div className="absolute inset-x-0 bottom-0 top-1/2">
+        <div className="absolute bottom-0 left-0 h-[70%] w-fit max-w-[500rem] translate-y-[-50%] border">
+          <img
+            src="/gifs/yellow-boat-half.gif"
+            alt="yellow boat"
+            className="h-full w-full object-contain object-left-bottom"
+          />
+        </div>
+      </div>
       <div className="absolute inset-0">
         <div className="hidden h-full items-end justify-end lg:flex">
           <div
