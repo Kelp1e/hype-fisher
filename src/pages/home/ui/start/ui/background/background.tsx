@@ -42,7 +42,7 @@ export const Background = (props: BackgroundProps) => {
             y: "-50%",
             transition: { type: "spring", duration: 1, delay: 0.3 },
           }}
-          className="absolute bottom-0 left-0 h-[70%] w-fit max-w-[500rem]"
+          className="absolute bottom-0 left-0 h-[70%] w-fit"
         >
           <img
             src="/gifs/yellow-boat.gif"
@@ -60,7 +60,7 @@ export const Background = (props: BackgroundProps) => {
             y: "-175%",
             transition: { type: "spring", duration: 1, delay: 0.5 },
           }}
-          className="absolute bottom-0 right-0 h-[35%] w-fit max-w-[500rem]"
+          className="absolute bottom-0 right-0 h-[35%] w-fit"
         >
           <img
             src="/gifs/yellow-boat.gif"
@@ -78,7 +78,7 @@ export const Background = (props: BackgroundProps) => {
             x: "5%",
             transition: { type: "spring", duration: 1, delay: 0.3 },
           }}
-          className="absolute bottom-0 left-0 h-[70%] w-fit max-w-[500rem]"
+          className="absolute bottom-0 left-0 h-[85%] w-fit"
         >
           <img
             src="/gifs/yellow-boat.gif"
@@ -89,16 +89,16 @@ export const Background = (props: BackgroundProps) => {
         <motion.div
           initial={{
             x: "100%",
-            y: "-175%",
+            y: "-150%",
             opacity: 0
           }}
           animate={{
             x: "0%",
-            y: "-175%",
+            y: "-150%",
             opacity: 1,
             transition: { type: "spring", duration: 1, delay: 0.5 },
           }}
-          className="absolute bottom-0 right-1/2 h-[35%] w-fit max-w-[500rem]"
+          className="absolute bottom-0 right-1/2 h-[35%] w-fit"
         >
           <img
             src="/gifs/yellow-boat.gif"
