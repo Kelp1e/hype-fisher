@@ -31,7 +31,7 @@ export const Background = (props: BackgroundProps) => {
         className
       )}
     >
-      <div className="absolute inset-x-0 lg:hidden bottom-0 top-1/2">
+      <div className="absolute inset-x-0 bottom-0 top-1/2 lg:hidden">
         <motion.div
           initial={{
             x: "-100%",
