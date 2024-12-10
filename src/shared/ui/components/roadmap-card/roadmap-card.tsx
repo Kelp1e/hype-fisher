@@ -31,10 +31,7 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
     >
       {type === "in-progress" && (
         <div
-          className={cn(
-            "absolute inset-0 top-1/2 bg-[#18B45C]",
-            styles.waves
-          )}
+          className={cn("absolute inset-0 top-1/2 bg-[#18B45C]", styles.waves)}
         />
       )}
       <div className="relative z-[2] h-full px-[20rem] pb-[20rem] pt-[30rem]">
