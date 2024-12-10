@@ -84,7 +84,7 @@ export const RoadmapContent = () => {
                 repeatType: "loop",
               }}
             >
-              <Icon.GreenFish className="h-[35rem] -rotate-45" />
+              <Icon.OrangeFish className="h-[35rem] -rotate-45" />
             </motion.div>
           }
           bullets={[

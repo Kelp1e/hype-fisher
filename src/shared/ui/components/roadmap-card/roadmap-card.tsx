@@ -32,7 +32,7 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
       {type === "in-progress" && (
         <div
           className={cn(
-            "absolute inset-0 top-1/2 rotate-180 bg-[#18B45C]",
+            "absolute inset-0 top-1/2 bg-[#18B45C]",
             styles.waves
           )}
         />
