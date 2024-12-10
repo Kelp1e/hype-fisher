@@ -36,7 +36,7 @@ export const Button = React.forwardRef<never>(
           onMouseEnter?.()
         }}
         className={cn(
-          "group/button relative min-h-[50rem] font-kemco text-white hover:bottom-[2rem] pointer-coarse:hover:bottom-0",
+          "group/button relative block min-h-[50rem] font-kemco text-white hover:bottom-[2rem] pointer-coarse:hover:bottom-0",
           styles.button,
           className
         )}
