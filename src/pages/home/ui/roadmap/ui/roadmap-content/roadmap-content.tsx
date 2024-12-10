@@ -44,12 +44,12 @@ export const RoadmapContent = () => {
   return (
     <motion.div
       ref={ref}
-      className="mx-auto grid max-w-[520rem] grid-cols-2 gap-[20rem] md:max-w-full md:grid-cols-4"
+      className="mx-auto grid max-w-[520rem] grid-cols-2 grid-rows-2 gap-[20rem] md:max-w-full md:grid-cols-4 md:grid-rows-1"
       variants={cardsVariants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
     >
-      <motion.div variants={cardVariants}>
+      <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
           current
           date={t("roadmap.cards.0.date")}
@@ -69,7 +69,7 @@ export const RoadmapContent = () => {
           bullets={[t("roadmap.cards.0.bullets.0")]}
         />
       </motion.div>
-      <motion.div variants={cardVariants}>
+      <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
           date={t("roadmap.cards.1.date")}
           icon={
@@ -89,10 +89,11 @@ export const RoadmapContent = () => {
           bullets={[
             t("roadmap.cards.1.bullets.0"),
             t("roadmap.cards.1.bullets.1"),
+            t("roadmap.cards.1.bullets.2"),
           ]}
         />
       </motion.div>
-      <motion.div variants={cardVariants}>
+      <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
           date={t("roadmap.cards.2.date")}
           icon={
@@ -112,7 +113,7 @@ export const RoadmapContent = () => {
           bullets={[t("roadmap.cards.2.bullets.0")]}
         />
       </motion.div>
-      <motion.div variants={cardVariants}>
+      <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
           date={t("roadmap.cards.3.date")}
           icon={
@@ -129,10 +130,7 @@ export const RoadmapContent = () => {
               <Icon.GreenFish className="h-[78.25rem] -rotate-45" />
             </motion.div>
           }
-          bullets={[
-            t("roadmap.cards.3.bullets.0"),
-            t("roadmap.cards.3.bullets.1"),
-          ]}
+          bullets={[t("roadmap.cards.3.bullets.0")]}
         />
       </motion.div>
     </motion.div>

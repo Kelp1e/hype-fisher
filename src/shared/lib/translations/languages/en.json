@@ -2,8 +2,8 @@
   "startFishing": "Start fishing",
   "open": "Open",
   "news": {
-    "multiplayer": "Live multiplayer",
-    "adventures": "Dive into new adventures"
+    "multiplayer": "Play Live Multiplayer",
+    "join": "Join wild tournaments and compete for a real $$$ daily prize pool!!!"
   },
   "roadmap": {
     "description": "Turn your catch into rewards",
@@ -13,16 +13,17 @@
         "bullets": ["Catch $HYPECOINS in single-player arcade fishing"]
       },
       {
-        "date": "Now-dec 24",
+        "date": "Now-Jun 24",
         "bullets": [
-          "Catch $HYPECOINS through single-player arcade fishing",
-          "Win $HYPECOINS in PVP fishing tournaments"
+          "Catch $HYPE tokens in single-player arcade fishing!",
+          "Win $HYPE tokens in thrilling PVP fishing battles!",
+          "Join Multiplayer Mode and compete for up to $100 USDT daily in tournaments and leaderboards!"
         ]
       },
       {
-        "date": "Jan 25",
+        "date": "Q1 2025 Airdrop",
         "bullets": [
-          "Get valuable $AIRDROP based on your $HYPECOIN amount and use it in the GAME"
+          "Play Multiplayer Mode and compete for up to $100 USDT daily in tournaments and leaderboards!"
         ]
       },
       {

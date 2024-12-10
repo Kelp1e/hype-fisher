@@ -8,17 +8,7 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        presets: [
-          "@babel/typescript",
-          "patronum/babel-preset",
-          "atomic-router/babel-preset",
-        ],
-        plugins: [
-          [
-            "effector/babel-plugin",
-            { addLoc: true, factories: ["effector-forms"] },
-          ],
-        ],
+        presets: ["@babel/typescript"],
       },
     }),
     svgr({ include: "**/*.svg" }),

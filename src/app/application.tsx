@@ -1,14 +1,11 @@
-import { Pages } from "~/pages"
+import { Home } from "~/pages/home/home.page.tsx"
 
-import { RouterProvider } from "~/shared/config"
 import { SoundContextProvider } from "~/shared/lib"
 
 export const App = () => {
   return (
-    <RouterProvider>
-      <SoundContextProvider>
-        <Pages />
-      </SoundContextProvider>
-    </RouterProvider>
+    <SoundContextProvider>
+      <Home />
+    </SoundContextProvider>
   )
 }

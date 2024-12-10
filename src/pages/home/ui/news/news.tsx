@@ -7,7 +7,7 @@ export const News = () => {
   return (
     <div className="flex h-[80rem] items-center justify-center overflow-hidden bg-orange font-kemco">
       <Marquee autoFill className="flex gap-[10rem]" speed={25}>
-        <div className="mx-[20rem]">{t("news.adventures")}</div>
+        <div className="mx-[20rem]">{t("news.join")}</div>
         <div className="mx-[20rem]">{t("news.multiplayer")}</div>
       </Marquee>
     </div>
