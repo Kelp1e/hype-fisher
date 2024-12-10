@@ -168,17 +168,17 @@
 }
 
 .button:hover .shine {
-	animation: shine-hover 0.5s forwards steps(2);
+  animation: shine-hover 0.5s forwards steps(2);
 }
 
 @keyframes shine-hover {
-	0% {
-		transform: scale(0%);
-	}
-	50% {
-		transform: scale(100%);
-	}
-	100% {
-		transform: scale(0%);
-	}
+  0% {
+    transform: scale(0%);
+  }
+  50% {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(0%);
+  }
 }

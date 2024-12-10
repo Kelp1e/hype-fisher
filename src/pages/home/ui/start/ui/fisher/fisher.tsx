@@ -45,7 +45,11 @@ export const Fisher = (props: FisherProps) => {
         />
       </motion.div>
       <div className="absolute inset-x-[10%] bottom-0">
-        <img src="/images/wave.png" alt="wave" className="h-full animate-flying-x w-full" />
+        <img
+          src="/images/wave.png"
+          alt="wave"
+          className="h-full w-full animate-flying-x"
+        />
       </div>
     </div>
   )

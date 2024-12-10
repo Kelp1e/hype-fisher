@@ -1,5 +1,4 @@
 export const getCornersPolygon = (size: string): string => {
-
   return `
       ${size} 0%,
       calc(100% - ${size}) 0%,

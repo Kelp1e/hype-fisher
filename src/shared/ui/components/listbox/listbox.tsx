@@ -11,7 +11,7 @@ export const Listbox = (props: ListboxProps) => {
     <Headless.Listbox
       as="div"
       className={cn(
-        "pointer-coarse:data-[open]:bottom-0 pointer-coarse:hover:bottom-0 relative hover:bottom-[2rem] data-[open]:bottom-[2rem]",
+        "relative hover:bottom-[2rem] data-[open]:bottom-[2rem] pointer-coarse:hover:bottom-0 pointer-coarse:data-[open]:bottom-0",
         className
       )}
       {...rest}

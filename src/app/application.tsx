@@ -1,4 +1,4 @@
-import { Home } from "~/pages/home/home.page.tsx"
+import { Home } from "~/pages/home"
 
 import { SoundContextProvider } from "~/shared/lib"
 
