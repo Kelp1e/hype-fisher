@@ -36,7 +36,9 @@ export const RoadmapCard = (props: RoadmapCardProps) => {
       )}
       <div className="relative z-[2] h-full px-[20rem] pb-[20rem] pt-[30rem]">
         <div className="flex h-full flex-col items-center justify-between gap-[35rem] text-center text-white">
-          <h1 className="font-kemco text-[16rem] lg:text-[28rem]">{title}</h1>
+          <h1 className="whitespace-pre-line font-kemco text-[16rem] lg:text-[28rem]">
+            {title}
+          </h1>
           {icon}
           <p className="flex flex-col items-center gap-[20rem] text-center font-de-pixel-klein text-[14rem] lg:text-[16rem]">
             {bullets?.map((bullet, index) => <span key={index}>{bullet}</span>)}
