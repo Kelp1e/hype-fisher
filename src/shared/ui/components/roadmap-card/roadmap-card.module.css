@@ -1,0 +1,12 @@
+.waves {
+  --mask: radial-gradient(
+        49.2rem at 50% calc(100% - 69rem),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60rem) 0/120rem 100%,
+    radial-gradient(49.2rem at 50% calc(100% + 39rem), #0000 99%, #000 101%) 50%
+      calc(100% - 30rem) / 120rem 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

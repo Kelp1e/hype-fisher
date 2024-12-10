@@ -1,9 +1,9 @@
 import React from "react"
 
 export type RoadmapCardProps = {
-  date: string
+  title: string
   icon: React.ReactNode
   bullets: string[]
 
-  current?: boolean
+  type?: "passed" | "in-progress" | "coming"
 }

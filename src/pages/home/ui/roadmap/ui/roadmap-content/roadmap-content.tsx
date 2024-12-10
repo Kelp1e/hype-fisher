@@ -51,8 +51,8 @@ export const RoadmapContent = () => {
     >
       <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
-          current
-          date={t("roadmap.cards.0.date")}
+          type="passed"
+          title={t("roadmap.cards.0.date")}
           icon={
             <motion.div
               animate={{ y: [0, "-4rem", 0] }}
@@ -71,7 +71,8 @@ export const RoadmapContent = () => {
       </motion.div>
       <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
-          date={t("roadmap.cards.1.date")}
+          type="in-progress"
+          title={t("roadmap.cards.1.date")}
           icon={
             <motion.div
               animate={{ y: [0, "-4rem", 0] }}
@@ -95,7 +96,7 @@ export const RoadmapContent = () => {
       </motion.div>
       <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
-          date={t("roadmap.cards.2.date")}
+          title={t("roadmap.cards.2.date")}
           icon={
             <motion.div
               animate={{ y: [0, "-4rem", 0] }}
@@ -115,7 +116,7 @@ export const RoadmapContent = () => {
       </motion.div>
       <motion.div variants={cardVariants} className="h-full">
         <RoadmapCard
-          date={t("roadmap.cards.3.date")}
+          title={t("roadmap.cards.3.date")}
           icon={
             <motion.div
               animate={{ y: [0, "-4rem", 0] }}
