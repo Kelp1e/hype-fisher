@@ -1,7 +1,7 @@
 export { Button } from "./button"
 export { Text } from "./text"
 export { Link } from "./link"
-export { Video } from "./video"
+export { AutoVideo } from "./auto-video"
 export { Card } from "./card"
 export { RoadmapCard } from "./roadmap-card"
 export { Corners } from "./corners"

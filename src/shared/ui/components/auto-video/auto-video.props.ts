@@ -1,5 +1,5 @@
 import React from "react"
 
-export type VideoProps = {
+export type AutoVideoProps = {
   src?: string
 } & React.HTMLAttributes<HTMLVideoElement>

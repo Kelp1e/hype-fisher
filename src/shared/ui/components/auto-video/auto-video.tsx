@@ -1,6 +1,6 @@
-import { VideoProps } from "./video.props.ts"
+import { AutoVideoProps } from "./auto-video.props.ts"
 
-export const Video = (props: VideoProps) => {
+export const AutoVideo = (props: AutoVideoProps) => {
   const { src, ...rest } = props
 
   return (
